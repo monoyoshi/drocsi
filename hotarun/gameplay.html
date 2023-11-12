@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="../../assets/favicon.png">
+    <title>Hotarun/Gameplay | wikyu | monoyoshi.github.io</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/projects.css">
+
+    <link rel="stylesheet" href="../../css/dragalia.css">
+
+    <!-- scripts -->
+    <script src="../../javascript/main.js"></script>
+    <script src="../../javascript/footer.js"></script>
+    <script>
+        // insert footer
+        window.addEventListener("load", function () {
+            document.getElementsByTagName("footer")[0].innerHTML = footer(2);
+        });
+    </script>
+
+    <!-- topbar -->
+    <button onClick="topScroll()" class="topbar"></button>
+
+    <!-- sidebar navtab -->
+    <div class="navtab">
+        <a href="../../" id="home">home</a>
+        <a href="../../about" id="about">about me</a>
+        <a href="../../art" id="art">art</a>
+        <a href="../../projects" id="projects">projects</a>
+        <a href="../../contact" id="contact">contact</a>
+    </div>
+
+    <!-- light mode / dark mode toggle -->
+    <div class="flexbox column center" id="pullswitch">
+        <div class="string"></div>
+        <button class="lightdark-mode"></button>
+    </div>
+</head>
+
+<body>
+    <div class="h1">Hotarun/Gameplay</div>
+
+    <br>
+
+    <div class="flexbox center">
+        <a href="../hotarun" class="navbutton">General</a>
+        <a href="javascript:;" class="navbutton" id="active">Gameplay</a>
+        <a href="quotes" class="navbutton">Quotes</a>
+        <a href="stories" class="navbutton">Stories</a>
+        <a href="gallery" class="navbutton">Gallery</a>
+    </div>
+
+    <br>
+
+    <div class="h1">Stats</div>
+    <hr>
+    <table class="transparent">
+        <tr>
+            <th>Level 80 HP</th>
+            <td>???</td>
+        </tr>
+        <tr>
+            <th>Level 80 Strength</th>
+            <td>???</td>
+        </tr>
+        <tr>
+            <th>
+                <span class="tooltip">Total Max HP
+                    <span class="ttpopup">5★ Max HP with all Mana Circle/Spiral Nodes and Bonus</span>
+                </span>
+            </th>
+            <td>
+                <span class="tooltip">??? (??? + ??? + ??)
+                    <span class="ttpopup">Total (5★ Max + Mana Circle/Spiral Node Stats + Mana Circle Bonus)</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <span class="tooltip">Total Max Strength
+                    <span class="ttpopup">5★ Max Str with all Mana Circle/Spiral Nodes and Bonus</span>
+                </span>
+            </th>
+            <td>
+                <span class="tooltip">??? (??? + ??? + ??)
+                    <span class="ttpopup">Total (5★ Max + Mana Circle/Spiral Node Stats + Mana Circle Bonus)</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <span class="tooltip">Base Min Might
+                    <span class="ttpopup">Minimum HP + Minimum Str + Lv. 1 Co-Ability Might + Lv. 1 Skill 1 Might</span>
+                </span>
+            </th>
+            <td>
+                <span class="tooltip">???
+                    <span class="ttpopup">?? + ?? + 170 + 100</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <span class="tooltip">Base Max Might
+                    <span class="ttpopup">
+                        Does not include external buffs (e.g. Dragons, Halidom, Wyrmprints, etc.)<br>
+                        <br>
+                        Max 5★ HP + Max 5★ Str + Total Skill Might + Co-Ability Might + Total Ability Might
+                        + Force Strike Lv. 2 Might
+                    </span>
+                </span>
+            </th>
+            <td>
+                <span class="tooltip">????
+                    <span class="ttpopup">??? + ??? + (300 + 200) + 320 + (100 + 100 + 100) + 120</span>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <th>Defense</th>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th>Class</th>
+            <td>Attack Unit</td>
+        </tr>
+        <tr>
+            <th>Share Points</th>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <div class="h1">Skills</div>
+    <hr>
+    <div class="flexbox">
+        <table class="dlssa" style="width: 50%">
+            <tr>
+                <th style="padding-bottom: 5px">
+                    <div class="flexbox center">
+                        <img src="../assets/hotarun/s1.png" width="32px" style="margin: 0 15px 0 0;" alt="Skill 1 icon">
+                        <span class="h3">?????</span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flexbox center">
+                        <button class="navbutton">Lv1</button>
+                        <button class="navbutton">Lv2</button>
+                        <button class="navbutton" id="active">Lv3</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Shareable <img src="../assets/skill-share.png" style="width: 24px; vertical-align: middle;"> 5
+                </td>
+            </tr>
+            <tr><td><hr></td></tr>
+            <tr>
+                <td>
+                    <b class="other">SP Cost</b>: <b>????</b><br>
+                    <b class="other">Shared SP Cost</b>: <b>????</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        ????? (<b class="other">Might</b>: 300)
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table class="dlssa" style="width: 50%">
+            <tr>
+                <th style="padding-bottom: 5px">
+                    <div class="flexbox center">
+                        <img src="../assets/hotarun/s2.png" width="32px" style="margin: 0 15px 0 0;" alt="Skill 2 icon">
+                        <span class="h3">?????</span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flexbox center">
+                        <button class="navbutton">Lv1</button>
+                        <button class="navbutton" id="active">Lv2</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b class="other">SP Cost</b>: <b>????</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        ????? (<b class="other">Might</b>: 200)
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="h1">Co-abilities</div>
+    <hr>
+    <div class="flexbox">
+        <table class="dlssa" style="width: 50%">
+            <tr>
+                <th style="padding-bottom: 5px">
+                    <div class="flexbox center">
+                        <img src="../assets/hotarun/ca.png" width="32px" style="margin: 0 15px 0 0;" alt="Co-ability icon">
+                        <span class="h3">?????</span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flexbox center">
+                        <button class="navbutton">Lv1</button>
+                        <button class="navbutton">Lv2</button>
+                        <button class="navbutton">Lv3</button>
+                        <button class="navbutton">Lv4</button>
+                        <button class="navbutton" id="active">Lv5</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        ?????<br>
+                        Benefits your whole team. (<b class="other">Might</b>: 320)
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table class="dlssa" style="width: 50%">
+            <tr>
+                <th style="padding-bottom: 5px">
+                    <div class="flexbox center">
+                        <img src="../assets/hotarun/cca.png" width="32px" style="margin: 0 15px 0 0;" alt="Chain Co-ability icon">
+                        <span class="h3">(Light) ?????</span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flexbox center">
+                        <button class="navbutton">Lv1</button>
+                        <button class="navbutton">Lv2</button>
+                        <button class="navbutton">Lv3</button>
+                        <button class="navbutton">Lv4</button>
+                        <button class="navbutton" id="active">Lv5</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        If a team member is attuned to Light:<br>
+                        ?????<br>
+                        Benefits your whole team. (<b class="other">Might</b>: 320)
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="h1">Abilities</div>
+    <hr>
+    <div class="flexbox">
+        <table class="dlssa" style="width: 100%">
+            <tr>
+                <th style="padding-bottom: 5px">
+                    <div class="flexbox center">
+                        <!--<img src="../assets/hotarun/a1.png" width="32px" style="margin: 0 15px 0 0;" alt="Ability 1 icon">-->
+                        <span class="h3">?????</span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flexbox center">
+                        <button class="navbutton">Lv1</button>
+                        <button class="navbutton" id="active">Lv2</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Reduces susceptibility to freezing by <b>100%</b>.</p>
+                    <p>
+                        ????? (<b class="other">Might</b>: 100)
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table class="dlssa" style="width: 100%">
+            <tr>
+                <th style="padding-bottom: 5px">
+                    <div class="flexbox center">
+                        <img src="../assets/hotarun/a2.png" width="32px" style="margin: 0 15px 0 0;" alt="Ability 2 icon">
+                        <span class="h3">?????</span>
+                    </div>
+                </th>
+                
+            </tr>
+            <tr>
+                <td>
+                    <div class="flexbox center">
+                        <button class="navbutton">Lv1</button>
+                        <button class="navbutton" id="active">Lv2</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        Reduces susceptibility to poison and curses by 100%. (<b class="other">Might</b>: 100)
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table class="dlssa" style="width: 100%">
+            <tr>
+                <th style="padding-bottom: 5px">
+                    <div class="flexbox center">
+                        <!--<img src="../assets/hotarun/a3.png" width="32px" style="margin: 0 15px 0 0;" alt="Ability 3 icon">-->
+                        <span class="h3">?????</span>
+                    </div>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="flexbox center">
+                        <button class="navbutton">Lv1</button>
+                        <button class="navbutton" id="active">Lv2</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>????? (<b class="other">Might</b>: 100)</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="h1">Notes</div>
+    <hr>
+    work-in-progress.png
+
+</body>
+
+<footer>
+    [insert footer here]
+</footer>
+
+</html>

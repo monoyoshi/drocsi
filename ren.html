@@ -3,7 +3,7 @@
 
 <head>
     <link rel="icon" type="image/png" href="../assets/favicon.png">
-    <title>Ren | monoyoshi.github.io</title>
+    <title>Ren | wikyu | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -23,10 +23,10 @@
     </script>
 
     <!-- topbar -->
-    <button class="topbar" onClick="topScroll()"></button>
+    <button onClick="topScroll()" class="topbar"></button>
 
-    <!-- sidebar navtabs -->
-    <div class="navtabs" class="sidenav">
+    <!-- sidebar navtab -->
+    <div class="navtab">
         <a href="../" id="home">home</a>
         <a href="../about" id="about">about me</a>
         <a href="../art" id="art">art</a>
@@ -37,42 +37,51 @@
     <!-- light mode / dark mode toggle -->
     <div class="flexbox column center" id="pullswitch">
         <div class="string"></div>
-        <button id="lightdark-mode"></button>
+        <button class="lightdark-mode"></button>
     </div>
 </head>
 
 <body>
     <div class="flexbox">
-        <div class="image-center" style="width: 45%; text-align: center; padding: 15px;">
-            <img src="assets/ren/portrait.png" style="max-width: 80%;">
+        <div class="flexbox center" style="width: 40%;">
+            <img src="assets/ren/portrait2.png" alt="Ren main art" style="margin: 15px auto;">
         </div>
-        <div style="width: 55%;">
-            <div class="flexbox column" style="margin-right: 15%; margin-left: 15%;">
+        <div class="flexbox center" style="width: 60%;">
+            <div class="flexbox column" style="width: 65%;">
                 <div class="textbox">
                     <div class="h2">Sword Enthusiast</div>
-                    <div class="h1">Ren</div>
+                    <div class="flexbox center horizontal">
+                        <img src="assets/element/water.png" width="32px" style="margin: 0 15px 0 0px;" alt="Water element icon">
+                        <img src="assets/weapon/sword.png" width="32px" style="margin: 0 15px 0 0;" alt="Sword weapon icon">
+                        <div class="h1">Ren</div>
+                    </div>
                     <div class="quote" style="margin: 15px;">
-                        <span class="h2" style="font-weight: normal;">"[insert splash quote here]"</span>
+                        <span class="h3" style="font-weight: normal;">"[insert splash quote here]"</span>
                     </div>
                     <p>
-                        A so-called "dragon" from another world whose body and soul were fused with a human through a twisted
+                        A dragon from another world whose body and soul were fused with a human's through a twisted
                         experiment. Not wanting to let their host's "sacrifice" go in vain, this dragon-human fusion
-                        escaped and now travels the world hoping to make the most of their new life.
+                        escaped and now roams the world hoping to make the most out of their new life.
                     </p>
                     <div class="h1">Profile</div>
                 </div>
-                <table class="transparent" style="width: 100%; padding: 0; margin: 0;">
+                <table class="transparent" style="margin: auto 15px;">
                     <tr>
                         <th>Aliases</th>
                         <td>
+                            <a href="../about">Kyurem</a><br>
+                            Kyu<br>
                             Boundarywyrm<br>
+                            Dx-46<br>
                             Bladewyrm<br>
                             Big brother Ren-ren<br>
-                            Ren-senpai<br>
-                            Kyurem
+                            Ren-senpai
+
                         </td>
                     </tr>
-                    <tr><th colspan="2"><hr></th></tr>
+                    <tr>
+                        <td><br></td>
+                    </tr>
                     <tr>
                         <th>Species</th>
                         <td>Dragon(?)</td>
@@ -90,23 +99,26 @@
                     </tr>
                     <tr>
                         <th>Residence</th>
-                        <td>"The void"</td>
+                        <td>
+                            "Somewhere in the otherworld"<br>
+                            The Halidom
+                        </td>
                     </tr>
-                    <tr><th colspan="2"><hr></th></tr>
+                    <tr>
+                        <td><br></td>
+                    </tr>
                     <tr>
                         <th>Handedness</th>
                         <td>Ambidextrous</td>
                     </tr>
                     <tr>
-                        <th>Blood Type</th>
+                        <th>Blood type</th>
                         <td>AB</td>
                     </tr>
                     <tr>
                         <th>Likes</th>
                         <td>
                             Bladed weapons (swords)<br>
-                            Monsters<br>
-                            Animals<br>
                             The sky<br>
                             Explosions
                         </td>
@@ -120,10 +132,7 @@
                     </tr>
                     <tr>
                         <th>Favorite food</th>
-                        <td>
-                            Bread<br>
-                            <span class="tooltip">Fruit<span>Favorite fruit: dragonfruit, blueberries, strawberries</span></span>
-                        </td>
+                        <td>Bread</td>
                     </tr>
                     <tr>
                         <th>Hobbies</th>
@@ -137,17 +146,80 @@
                         <th>Special skills</th>
                         <td>Staring contests</td>
                     </tr>
-                    <tr>
-                        <th>Image Color</th>
-                        <td style="padding-left: 0;"><div class="flexbox center" style="justify-content: flex-start;"><span class="imagecolor" style="background-color: rgb(55, 115, 185);"></span>#3773B9</div>
-                        </td>
-                    </tr>
                 </table>
             </div>
         </div>
     </div>
 
     <br>
+
+    <div class="flexbox center">
+        <a href="javascript:;" class="navbutton" id="active">General</a>
+        <a href="ren/gameplay" class="navbutton">Gameplay</a>
+        <a href="ren/quotes" class="navbutton">Quotes</a>
+        <a href="ren/stories" class="navbutton">Stories</a>
+        <a href="ren/gallery" class="navbutton">Gallery</a>
+    </div>
+
+    <br>
+
+    <div class="flexbox">
+        <div class="textbox" style="width: 50%;">
+            <div class="h1">Scythe of the Syndicate</div><br>
+            <div class="flexbox center">
+                <img src="../assets/placeholder/drgl-5.png" alt="idk">
+            </div>
+            <p>
+                Ren is a dragon originally known as the Boundarywyrm <b>Kyurem</b>. They were discovered within the
+                space between worlds and were captured by the Syndicate.
+            </p>
+            <p>
+                While in containment, the organization planned to use Kyurem for a set of experiments known as the
+                Synthetic Shapeshifting Project. They wanted to give a human access to all of the Boundarywyrm's power
+                in order to turn the dragon into their very own superweapon.
+            </p>
+            <p>
+                The result is the dragon-human fusion that walks Grastaea today. Unwilling to fulfill the Syndicate's
+                sinister plans, <b>Ren</b> broke out of containment. In the present day, they work alongside the Prince
+                and the rest of the Halidom to protect everyone from harm.
+            </p>
+        </div>
+        <div class="textbox" style="width: 50%;">
+            <div class="h1">Dragon, human, or...?</div><br>
+            <div class="flexbox center">
+                <img src="../assets/placeholder/drgl-5.png" alt="idk">
+            </div>
+            <p>
+                Because of their strange origins, Ren is surrounded by many rumors.
+            </p>
+            <p>
+                Some believe that Kyurem is an otherworldly fiend whose violent arrival wiped out an entire village. It
+                is said that this "human-eating monster" lurks the ruins at night and attacks those who dare approach
+                it.
+            </p>
+            <p>
+                Others believe that Ren is a human possessed by an evil spirit, similar to Morsayati and his
+                reincarnations.
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="h1">Relationships</div>
+    <div class="h2">Hotarun</div>
+    <p>His "dad."</p>
+
+    <br>
+
+    <div class="h1">Trivia</div>
+    <ul>
+        <li>
+            The "village" in the rumor about Ren actually refers to the Syndicate facility that they were once
+            imprisoned in. The Syndicate spread this rumor in an effort to demonize the Boundarywyrm.
+        </li>
+    </ul>
+
 </body>
 
 <footer>

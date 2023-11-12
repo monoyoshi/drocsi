@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="../../assets/favicon.png">
+    <title>Ren/Quotes | wikyu | monoyoshi.github.io</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/projects.css">
+
+    <link rel="stylesheet" href="../../css/dragalia.css">
+
+    <!-- scripts -->
+    <script src="../../javascript/main.js"></script>
+    <script src="../../javascript/footer.js"></script>
+    <script>
+        // insert footer
+        window.addEventListener("load", function () {
+            document.getElementsByTagName("footer")[0].innerHTML = footer(2);
+        });
+    </script>
+
+    <script src="../../javascript/audio.js"></script>
+    <audio></audio>
+
+    <script src="https://kit.fontawesome.com/082d466fdc.js" crossorigin="anonymous"></script>
+
+    <!-- topbar -->
+    <button onClick="topScroll()" class="topbar"></button>
+
+    <!-- sidebar navtab -->
+    <div class="navtab">
+        <a href="../../" id="home">home</a>
+        <a href="../../about" id="about">about me</a>
+        <a href="../../art" id="art">art</a>
+        <a href="../../projects" id="projects">projects</a>
+        <a href="../../contact" id="contact">contact</a>
+    </div>
+
+    <!-- light mode / dark mode toggle -->
+    <div class="flexbox column center" id="pullswitch">
+        <div class="string"></div>
+        <button class="lightdark-mode"></button>
+    </div>
+</head>
+
+<body>
+    <div class="h1">Ren/Quotes</div>
+
+    <br>
+
+    <div class="flexbox center">
+        <a href="../ren" class="navbutton">General</a>
+        <a href="gameplay" class="navbutton">Gameplay</a>
+        <a href="javascript:;" class="navbutton" id="active">Quotes</a>
+        <a href="stories" class="navbutton">Stories</a>
+        <a href="gallery" class="navbutton">Gallery</a>
+    </div>
+
+    <br>
+
+    <div class="flexbox center">
+        <a href="javascript:;" class="navbutton" id="active">English</a>
+        <a href="javascript:;" class="navbutton">日本語</a>
+    </div>
+
+    <br>
+
+    <div class="h2">On Sortied</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heh. You called?</div>
+
+    <br>
+
+    <div class="h2">On Entering a Room</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Yeah, yeah. I'll, uh, behave.</div>
+
+    <br>
+
+    <div class="h2">When Quest Begins</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Everyone good?</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Let's get this party started.</div>
+
+    <br>
+
+    <div class="h2">Response to Beginning of a Quest</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Right behind you.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>For peace or something, yeah?</div>
+
+    <br>
+
+    <div class="h2">When Controlling Character in Quest</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>We fight as one!</div>
+
+    <br>
+
+    <div class="h2">When Receiving a Heal</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Oh, um, thank you.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Feels great to move, huh.</div>
+
+    <br>
+
+    <div class="h2">When Entering a Boss' Room</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>This is the part where we get serious, right?</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Oh? Heh, things are about to get fun.</div>
+
+    <br>
+
+    <div class="h2">Response to Entering a Boss' Room</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Yes, together.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>This feeling... Right, let's go.</div>
+
+    <br>
+
+    <div class="h2">Upon Getting to Low Health</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Ngh...! O-oh, n-no no, don't worry about me...</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Rrrgh...! I know I can...do better than this...!</div>
+
+    <br>
+
+    <div class="h2">Upon Opening A Chest</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>A new sword drop?</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Oh woah, what's this?</div>
+
+    <br>
+
+    <div class="h2">Boss on Low Health</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Just a little more...</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Struggle all you want...</div>
+
+    <br>
+
+    <div class="h2">Boss Enters Break State</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>This is our chance! Let's get 'em!</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>I'm...enjoying this...again...</div>
+
+    <br>
+
+    <div class="h2">Rare Enemy Spawns</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>The world's sure full of mysteries...</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>What IS...? Oh, uh, sorry.</div>
+
+    <br>
+
+    <div class="h2">Upon Death</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>I'm sorry, everyone...</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Ngh... I need a moment...</div>
+
+    <br>
+
+    <div class="h2">Upon Revival</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Alright, let's do this again!</div>
+
+    <br>
+
+    <div class="h2">When Using Weapon/Shared Skills</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Damage: Ha!</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Buff Self: With my strength...</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Buff Ally: I got your back, okay?</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Debuff Enemy: Heh, sorry.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heal Ally: Leave it to me.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heal Self: Yeah, yeah, hold on.</div>
+
+    <br>
+
+    <div class="h2">Player Uses Damaging Skill</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Ayo? A-amazing...</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>I wonder if I can pull off something like that...</div>
+
+    <br>
+
+    <div class="h2">When Shapeshifting is Ready</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>"Gamer move," huh? ...You got it.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>My power's ready!</div>
+
+    <br>
+
+    <div class="h2">Shapeshifting into Dragon</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Playtime's over. Check THIS out!</div>
+    <br>
+
+    <div class="h2">Idle During Quest</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heh, that's funny... Oh, uh, don't mind me.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Resting is always nice.</div>
+
+    <br>
+
+    <div class="h2">Quest Clear</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Oh, done already? ...Nice.</div>
+
+    <br>
+
+    <div class="h2">Quest Failure</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>I gotta get out before it gets worse...</div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="h2">Home Screen Walking</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Got lots of tasks to do.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Nice weather today.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Let's give it our all.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heh, night's the time when I THRIVE.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Bye! I sleep.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Late-night people—where y'all at?</div>
+
+    <br>
+
+    <div class="h2">Home Screen Inside</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>So, when are we going out next? I wanna explore somewhere new.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Yo, the Halidom is huge! The other day, I swear I discovered a new room.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>I know I don't really need to eat, but man, fresh bread is just so hard to resist...</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>The reason for the sudden cold the other day? Uhhh, t-totally wasn't me, no no.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>What do you mean, I'm "cute"!? B-be quiet! I'm a dragon, you know!</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>My little corner in the otherworld is cool and all, but the Halidom is so lively!</div>
+
+    <br>
+
+    <div class="h2">Home Screen Portrait</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Okay, I'm cool with the cold, but I hate snow and ice. Kinda a curse for me, you feel.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>I don't know about you, but I like looking up at the sky just 'cuz it's so BLUE! Like, there's something so...calming...about it.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>A legendary sword would be cool, yeah. I don't have that luxury though, so as long as you can slash and all, I'll take it.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Yo, the other night I had a dream that I was in the body of a prince. ...Although, I don't think I'm really the royalty type.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>I'm not that good at it, but I enjoy playing the piano. It's more fun when you're doing it with friends. ...Would you like to join me once?</div>
+
+    <br>
+
+    <div class="h2">Collection Portrait</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>If you hear something about a dragon that eats people at night, no you did <i>not</i>. Why does that...rumor...keep following me wherever I go...</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Where do I come from? Um, uhh... You don't want to know. What matters most though, is that I'm here now, yeah?</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>When you guys talk about heroes, the first thing that comes to mind is a sword. The best heroes gotta have a sword, right?</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>The way Siren captures the hearts of others with her voice... I should ask her for some pointers one day.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Y'know, I used to wear a hat and mask out there. It was pretty hot, yeah, but it sure did cover the most obvious of my...non-human features.</div>
+
+    <br>
+
+    <div class="h2">Limited Lines</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Halloween: Heh, happy Halloween. Hey, wanna know something? I sorta miss the taste of blood. ...Might you help me remember?</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Dragonyule: Hoho, happy Dragonyule! You ask for anything? As for me, I hope I got a new sword!</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>New Year: Ayo? Happy New Year! Let's make this one as fun as the last!</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Giving Valentine's: ...Look. I've seen other people do this, so like, I might as well. ...Take this, and happy Valentine's.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Receiving Valentine's: O-oh, for me? Oh wow, thanks...</div>
+
+    <br>
+
+    <div class="h2">At the Halidom</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Like this...right?</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>The sun's harsh. ...Nice.</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>...It's alright. I won't bite.</div>
+
+    <br>
+
+    <div class="h2">New Mana Circle Unlocked</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>It grows again...</div>
+
+    <br>
+
+    <div class="h2">On Mana Circle Fully Unbound</div>
+    <div class="flexbox center horizontal"><button onclick="playback('../assets/ren/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Y'know, my power's only led me to trouble. I feel at ease when I'm with you though, so really, thank you.</div>
+</body>
+
+<footer>
+    [insert footer here]
+</footer>
+
+</html>

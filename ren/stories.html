@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="../../assets/favicon.png">
+    <title>Ren/Stories | wikyu | monoyoshi.github.io</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <link rel="stylesheet" href="../../css/projects.css">
+
+    <link rel="stylesheet" href="../../css/dragalia.css">
+
+    <!-- scripts -->
+    <script src="../../javascript/main.js"></script>
+    <script src="../../javascript/footer.js"></script>
+    <script>
+        // insert footer
+        window.addEventListener("load", function () {
+            document.getElementsByTagName("footer")[0].innerHTML = footer(2);
+        });
+    </script>
+
+    <!-- topbar -->
+    <button onClick="topScroll()" class="topbar"></button>
+
+    <!-- sidebar navtab -->
+    <div class="navtab">
+        <a href="../../" id="home">home</a>
+        <a href="../../about" id="about">about me</a>
+        <a href="../../art" id="art">art</a>
+        <a href="../../projects" id="projects">projects</a>
+        <a href="../../contact" id="contact">contact</a>
+    </div>
+
+    <!-- light mode / dark mode toggle -->
+    <div class="flexbox column center" id="pullswitch">
+        <div class="string"></div>
+        <button class="lightdark-mode"></button>
+    </div>
+</head>
+
+<body>
+    <div class="h1">Ren/Stories</div>
+
+    <br>
+
+    <div class="flexbox center">
+        <a href="../ren" class="navbutton">General</a>
+        <a href="javascript:;" class="navbutton">Gameplay</a>
+        <a href="quotes" class="navbutton">Quotes</a>
+        <a href="stories" class="navbutton" id="active">Stories</a>
+        <a href="gallery" class="navbutton">Gallery</a>
+    </div>
+
+    <br>
+
+    <div class="flexbox center">
+        <button class="navbutton" id="active">Episode 1</button>
+        <button class="navbutton">Episode 2</button>
+        <button class="navbutton">Episode 3</button>
+        <button class="navbutton">Episode 4</button>
+        <button class="navbutton">Episode 5</button>
+    </div>
+
+    <br>
+
+    <div class="h1">[Episode 1 title]</div>
+    <hr>
+
+    <div>
+        work-in-progress.png
+    </div>
+    
+</body>
+
+<footer>
+    [insert footer here]
+</footer>
+
+</html>
