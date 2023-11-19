@@ -10,130 +10,128 @@
 
     <link rel="stylesheet" href="../css/main.css">
 
-    <link rel="stylesheet" href="../css/projects.css">
-
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="../javascript/main.js"></script>
-    <script src="../javascript/footer.js"></script>
+    <script src="../javascript/boilerplate.js"></script>
     <script>
-        // insert footer
-        window.addEventListener("load", function () {
-            document.getElementsByTagName("footer")[0].innerHTML = footer(1);
+        $(document).ready(function () {
+            $("header").html(header(1, "projects", "wikyu"));
+            $("footer").html(footer(1));
         });
     </script>
-
-    <!-- topbar -->
-    <button onClick="topScroll()" class="topbar"></button>
-
-    <!-- sidebar navtab -->
-    <div class="navtab">
-        <a href="../" id="home">home</a>
-        <a href="../about" id="about">about me</a>
-        <a href="../art" id="art">art</a>
-        <a href="javascript:;" id="projects" style="cursor: default;">projects</a>
-        <a href="../contact" id="contact">contact</a>
-    </div>
-
-    <!-- light mode / dark mode toggle -->
-    <div class="flexbox column center" id="pullswitch">
-        <div class="string"></div>
-        <button class="lightdark-mode"></button>
-    </div>
 </head>
 
 <body>
-    <div class="flexbox">
-        <div class="image-center" style="width: 45%; text-align: center; padding: 15px;">
-            <img src="assets/hotarun/portrait.png" style="max-width: 80%;">
-        </div>
-        <div style="width: 55%;">
-            <div class="flexbox column" style="margin-right: 15%; margin-left: 15%;">
-                <div class="textbox">
-                    <div class="h2">?????</div>
-                    <div class="h1">Hotarun</div>
-                    <div class="quote" style="margin: 15px;">
-                        <span class="h2" style="font-weight: normal;">"[insert splash quote here]"</span>
+    <header></header>
+
+    <article>
+        <div class="flexbox">
+            <div class="frame" style="width: 40%; margin: 0;">
+                <img src="assets/hotarun/portrait.png" alt="Hotarun main art" style="margin: 0;">
+            </div>
+            <div class="flexbox center" style="width: 60%;">
+                <div style="width: 65%;">
+                    <div class="textbox">
+                        <div class="h2">Rogue Android</div>
+                        <div class="flexbox center horizontal">
+                            <img src="assets/element/flame.png" width="32" style="margin: 0 15px 0 0;" alt="Flame element icon">
+                            <img src="assets/weapon/blade.png" width="32" style="margin: 0 15px 0 0;" alt="Blade weapon icon">
+                            <div class="h1">Hotarun</div>
+                        </div>
+                        <div class="quote">"[insert splash quote here]"</div>
+                        <p>
+                            An android resurrected by a certain sinister organization. Rebellious in nature, he escaped in
+                            the midst of the Boundarywyrm's rampage. He thinks of the dragon as his master and follows him
+                            in his shadow.
+                        </p>
+                        <br>
+                        <div class="h1">Profile</div>
                     </div>
-                    <p>
-                        An android resurrected by a certain sinister organization. Rebellious in nature, he escaped in
-                        the midst of the Boundarywyrm's rampage. He thinks of the dragon as his master and follows him
-                        in his shadow.
-                    </p>
-                    <div class="h1">Profile</div>
+                    <table class="transparent" style="margin: auto 15px;">
+                        <tr>
+                            <th>Aliases</th>
+                            <td>
+                                Hotaru<br>
+                                Hontaru
+                            </td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <th>Species</th>
+                            <td>Android</td>
+                        </tr>
+                        <tr>
+                            <th>Pronouns</th>
+                            <td>He/him</td>
+                        </tr>
+                        <tr>
+                            <th>Birthday</th>
+                            <td>November 17 (Scorpio)</td>
+                        </tr>
+                        <tr>
+                            <th>Residence</th>
+                            <td>"The void"</td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <th>Handedness</th>
+                            <td>Right-handed</td>
+                        </tr>
+                        <tr>
+                            <th>Blood type</th>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <th>Likes</th>
+                            <td>
+                                <a href="ren">Ren</a><br>
+                                Frogs
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Dislikes</th>
+                            <td>
+                                Sleeping<br>
+                                Crowded spaces
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Favorite food</th>
+                            <td>Candy</td>
+                        </tr>
+                        <tr>
+                            <th>Hobbies</th>
+                            <td>
+                                Hitting things with blunt force<br>
+                                Fantasizing about taking over the world
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Special skills</th>
+                            <td>
+                                Landing critical hits<br>
+                                Arson
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <table class="transparent" style="width: 100%; padding: 0; margin: 0;">
-                    <tr>
-                        <th>Aliases</th>
-                        <td>
-                            Hotaru<br>
-                            Hontaru
-                        </td>
-                    </tr>
-                    <tr><td><br></td></tr>
-                    <tr>
-                        <th>Species</th>
-                        <td>Android</td>
-                    </tr>
-                    <tr>
-                        <th>Pronouns</th>
-                        <td>He/him</td>
-                    </tr>
-                    <tr>
-                        <th>Birthday</th>
-                        <td>November 17 (Scorpio)</td>
-                    </tr>
-                    <tr>
-                        <th>Residence</th>
-                        <td>"The void"</td>
-                    </tr>
-                    <tr><td><br></td></tr>
-                    <tr>
-                        <th>Handedness</th>
-                        <td>Right-handed</td>
-                    </tr>
-                    <tr>
-                        <th>Blood type</th>
-                        <td>B</td>
-                    </tr>
-                    <tr>
-                        <th>Likes</th>
-                        <td>
-                            <a href="ren">Ren</a><br>
-                            Frogs
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Dislikes</th>
-                        <td>
-                            Sleeping<br>
-                            Crowded and/or small rooms
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Favorite food</th>
-                        <td>Candy</td>
-                    </tr>
-                    <tr>
-                        <th>Hobbies</th>
-                        <td>
-                            Hitting things with blunt force<br>
-                            Fantasizing about taking over the world
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Special skills</th>
-                        <td>Landing critical hits</td>
-                    </tr>
-                </table>
             </div>
         </div>
-    </div>
+    
+        <br>
+    
+        <div class="flexbox center">
+            <a href="javascript:;" class="navbutton" id="active">General</a>
+            <a href="hotarun/gameplay" class="navbutton">Gameplay</a>
+            <a href="hotarun/quotes" class="navbutton">Quotes</a>
+            <a href="hotarun/stories" class="navbutton">Stories</a>
+            <a href="hotarun/gallery" class="navbutton">Gallery</a>
+        </div>
+    </article>
 
-    <br>
+    <footer></footer>
 </body>
-
-<footer>
-    [insert footer here]
-</footer>
 
 </html>

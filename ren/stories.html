@@ -10,75 +10,60 @@
 
     <link rel="stylesheet" href="../../css/main.css">
 
-    <link rel="stylesheet" href="../../css/projects.css">
-
     <link rel="stylesheet" href="../../css/dragalia.css">
 
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="../../javascript/main.js"></script>
-    <script src="../../javascript/footer.js"></script>
+    <script src="../../javascript/boilerplate.js"></script>
     <script>
-        // insert footer
-        window.addEventListener("load", function () {
-            document.getElementsByTagName("footer")[0].innerHTML = footer(2);
+        $(document).ready(function () {
+            $("header").html(header(2, "projects", "wikyu"));
+            $("footer").html(footer(2));
         });
     </script>
-
-    <!-- topbar -->
-    <button onClick="topScroll()" class="topbar"></button>
-
-    <!-- sidebar navtab -->
-    <div class="navtab">
-        <a href="../../" id="home">home</a>
-        <a href="../../about" id="about">about me</a>
-        <a href="../../art" id="art">art</a>
-        <a href="../../projects" id="projects">projects</a>
-        <a href="../../contact" id="contact">contact</a>
-    </div>
-
-    <!-- light mode / dark mode toggle -->
-    <div class="flexbox column center" id="pullswitch">
-        <div class="string"></div>
-        <button class="lightdark-mode"></button>
-    </div>
 </head>
 
 <body>
-    <div class="h1">Ren/Stories</div>
+    <header></header>
 
-    <br>
+    <article>
+        <div class="h1">Ren/Stories</div>
 
-    <div class="flexbox center">
-        <a href="../ren" class="navbutton">General</a>
-        <a href="javascript:;" class="navbutton">Gameplay</a>
-        <a href="quotes" class="navbutton">Quotes</a>
-        <a href="stories" class="navbutton" id="active">Stories</a>
-        <a href="gallery" class="navbutton">Gallery</a>
-    </div>
+        <br>
 
-    <br>
+        <div class="flexbox center">
+            <a href="../ren" class="navbutton">General</a>
+            <a href="javascript:;" class="navbutton">Gameplay</a>
+            <a href="quotes" class="navbutton">Quotes</a>
+            <a href="stories" class="navbutton" id="active">Stories</a>
+            <a href="gallery" class="navbutton">Gallery</a>
+        </div>
 
-    <div class="flexbox center">
-        <button class="navbutton" id="active">Episode 1</button>
-        <button class="navbutton">Episode 2</button>
-        <button class="navbutton">Episode 3</button>
-        <button class="navbutton">Episode 4</button>
-        <button class="navbutton">Episode 5</button>
-    </div>
+        <br>
 
-    <br>
+        <div class="flexbox center">
+            <button class="navbutton" id="active">Episode 1</button>
+            <button class="navbutton">Episode 2</button>
+            <button class="navbutton">Episode 3</button>
+            <button class="navbutton">Episode 4</button>
+            <button class="navbutton">Episode 5</button>
+        </div>
 
-    <div class="h1">[Episode 1 title]</div>
-    <hr>
+        <br>
 
-    <div>
-        work-in-progress.png
-    </div>
+        <div class="textbox">
+            <div class="h1">[Episode 1 title]</div>
+            <hr>
     
-</body>
+            <div>
+                [episode 1 content]
+            </div>
+        </div>
+    </article>
 
-<footer>
-    [insert footer here]
-</footer>
+    <footer></footer>
+</body>
 
 </html>

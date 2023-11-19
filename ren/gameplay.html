@@ -10,648 +10,605 @@
 
     <link rel="stylesheet" href="../../css/main.css">
 
-    <link rel="stylesheet" href="../../css/projects.css">
-
     <link rel="stylesheet" href="../../css/dragalia.css">
 
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="../../javascript/main.js"></script>
-    <script src="../../javascript/footer.js"></script>
+    <script src="../../javascript/boilerplate.js"></script>
     <script>
-        // insert footer
-        window.addEventListener("load", function () {
-            document.getElementsByTagName("footer")[0].innerHTML = footer(2);
+        $(document).ready(function () {
+            $("header").html(header(2, "projects", "wikyu"));
+            $("footer").html(footer(2));
         });
     </script>
-
-    <!-- topbar -->
-    <button onClick="topScroll()" class="topbar"></button>
-
-    <!-- sidebar navtab -->
-    <div class="navtab">
-        <a href="../../" id="home">home</a>
-        <a href="../../about" id="about">about me</a>
-        <a href="../../art" id="art">art</a>
-        <a href="../../projects" id="projects">projects</a>
-        <a href="../../contact" id="contact">contact</a>
-    </div>
-
-    <!-- light mode / dark mode toggle -->
-    <div class="flexbox column center" id="pullswitch">
-        <div class="string"></div>
-        <button class="lightdark-mode"></button>
-    </div>
 </head>
 
 <body>
-    <div class="h1">Ren/Gameplay</div>
+    <header></header>
 
-    <br>
-
-    <div class="flexbox center">
-        <a href="../ren" class="navbutton">General</a>
-        <a href="javascript:;" class="navbutton" id="active">Gameplay</a>
-        <a href="quotes" class="navbutton">Quotes</a>
-        <a href="stories" class="navbutton">Stories</a>
-        <a href="gallery" class="navbutton">Gallery</a>
-    </div>
-
-    <br>
-
-    <div class="h1">Stats</div>
-    <hr>    
-    <table class="transparent">
-        <tr>
-            <th>Element</th>
-            <td>
-                <div class="flexbox center horizontal">
-                    <img src="../assets/element/water.png" width="16px" style="margin: 0 15px 0 0;" alt="Water element icon">
-                    Water
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <th>Weapon</th>
-            <td>
-                <div class="flexbox center horizontal">
-                    <img src="../assets/weapon/sword.png" width="16px" style="margin: 0 15px 0 0;" alt="Sword weapon icon">
-                    Sword
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <th>Class</th>
-            <td>
-                <div class="flexbox center horizontal">
-                    <img src="../assets/unittype/attack.png" height="16px" style="margin: 0 15px 0 0;" alt="Attack unit icon">
-                    Attack Unit
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <th>Share Points</th>
-            <td>
-                <div class="flexbox center horizontal">
-                    <img src="../assets/skill-share.png" width="16px" style="margin: 0 15px 0 0;" alt="Skill share icon">
-                    10
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <th>Base Rarity</th>
-            <td>
-                <div class="flexbox center horizontal">
-                    <img src="../assets/rarity/5.png" height="16px" style="margin: 0 15px 0 0;" alt="Rarity 5 icon">
-                    5
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td><br></td>
-        </tr>
-        <tr>
-            <th>Level 80 HP</th>
-            <td>452</td>
-        </tr>
-        <tr>
-            <th>Level 80 Strength</th>
-            <td>302</td>
-        </tr>
-        <tr>
-            <th>
-                <span class="tooltip">Total Max HP
-                    <span class="ttpopup">5★ Max HP with all Mana Circle/Spiral Nodes and Bonus</span>
-                </span>
-            </th>
-            <td>
-                <span class="tooltip">754 (452 + 277 + 25)
-                    <span class="ttpopup">Total (5★ Max + Mana Circle/Spiral Node Stats + Mana Circle Bonus)</span>
-                </span>
-            </td>
-        </tr>
-        <tr>
-            <th>
-                <span class="tooltip">Total Max Strength
-                    <span class="ttpopup">5★ Max Str with all Mana Circle/Spiral Nodes and Bonus</span>
-                </span>
-            </th>
-            <td>
-                <span class="tooltip">505 (302 + 185 + 18)
-                    <span class="ttpopup">Total (5★ Max + Mana Circle/Spiral Node Stats + Mana Circle Bonus)</span>
-                </span>
-            </td>
-        </tr>
-        <tr>
-            <th>
-                <span class="tooltip">Base Min Might
-                    <span class="ttpopup">Minimum HP + Minimum Str + Lv. 1 Co-Ability Might + Lv. 1 Skill 1 Might</span>
-                </span>
-            </th>
-            <td>
-                <span class="tooltip">376
-                    <span class="ttpopup">64 + 42 + 170 + 100</span>
-                </span>
-            </td>
-        </tr>
-        <tr>
-            <th>
-                <span class="tooltip">Base Max Might
-                    <span class="ttpopup">
-                        Does not include external buffs (e.g. Dragons, Halidom, Wyrmprints, etc.)<br>
-                        <br>
-                        Max 5★ HP + Max 5★ Str + Total Skill Might + Co-Ability Might + Total Ability Might
-                        + Force Strike Lv. 2 Might
-                    </span>
-                </span>
-            </th>
-            <td>
-                <span class="tooltip">2499
-                    <span class="ttpopup">754 + 505 + (300 + 200) + 320 + (100 + 100 + 100) + 120</span>
-                </span>
-            </td>
-        </tr>
-        <tr>
-            <th>Defense</th>
-            <td>10</td>
-        </tr>
-    </table>
-
-    <br>
-
-    <div class="h1">Skills</div>
-    <hr>
-    <div class="flexbox">
-        <table class="dlssa" style="width: 50%">
-            <tr>
-                <th style="padding-bottom: 5px">
-                    <div class="flexbox center">
-                        <img src="../assets/ren/s1.png" width="32px" style="margin: 0 15px 0 0;" alt="Twinkling Flurry icon">
-                        <span class="h3">Twinkling Flurry</span>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="flexbox center">
-                        <button class="navbutton">Lv1</button>
-                        <button class="navbutton">Lv2</button>
-                        <button class="navbutton" id="active">Lv3</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Shareable <img src="../assets/skill-share.png" style="width: 24px; vertical-align: middle;" alt="Skill share icon"> 5
-                    <hr>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b class="other">SP Cost</b>: <b>3380</b><br>
-                    <b class="other">Shared SP Cost</b>: <b>8450</b>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Deals damage to enemies directly ahead (4 hits of <b class="water">124%</b>, 2 hits of
-                        <b class="water">284%</b>, and 1 hit of <b class="water">396%</b> water damage) inflicts
-                        frostbite (dealing <b class="water">41%</b> water damage every 2.9 seconds for 21
-                        seconds - with 120% chance), and restores HP to the user with 30% Recovery Potency. If
-                        the user has Resonant Memory, a variant called <b>Subzero Slash</b> will be used
-                        instead.
-                    </p>
-
-                    <p><b>Subzero Slash</b> deals damage to enemies directly ahead (1 hit of
-                        <b class="water">750%</b> water damage and 1 hit of
-                        <b class="water">834%</b> water damage) and raises the dragon gauge by <b>50 DP</b> if
-                        the attack connects. Afflicted foes take extra damage (1 hit of
-                        <b class="water">975%</b> water damage and 1 hit of <b class="water">1084.2%</b> water
-                        damage).
-                    </p>
-
-                    <p>If this skill is used as a Helper Skill or a Shared Skill, it will deal 4 hits of
-                        <b class="water">124%</b>, 2 hits of <b class="water">284%</b>, and 1 hit of
-                        <b class="water">396%</b> water damage to enemies directly ahead, inflict
-                        frostbite for 21 seconds - dealing <b class="water">41%</b> water damage every 2.9
-                        seconds - with 120% chance, and restore HP to the user with 30% Recovery Potency.
-                        (<b class="other">Might</b>: 300)
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <table class="dlssa" style="width: 50%">
-            <tr>
-                <th style="padding-bottom: 5px">
-                    <div class="flexbox center">
-                        <img src="../assets/ren/s2.png" width="32px" style="margin: 0 15px 0 0;" alt="Frozen Surge icon">
-                        <span class="h3">Frozen Surge</span>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="flexbox center">
-                        <button class="navbutton">Lv1</button>
-                        <button class="navbutton" id="active">Lv2</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b class="other">SP Cost</b>: <b>9063</b>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Deals damage to surrounding enemies (3 hits of <b class="water">480%</b> water damage),
-                        reduces their defense (<b>15%</b> for 10 seconds), and grants all teammates the
-                        "Overdrive" effect. The defense reduction does not stack.
-                    </p>
-                    <p>
-                        The skill gauge for this skill can be filled by attacking enemies, but it will also
-                        gradually fill automatically.
-                    </p>
-                    <p>
-                        Overdrive has three progressively more powerful levels.<br>
-                        Lv. 1: For 60 seconds, increases strength by <b>10%</b>.<br>
-                        Lv. 2: For 60 seconds, increases strength by <b>15%</b>.<br>
-                        Lv. 3: For 60 seconds, grants overdamage based on <b>20%</b> of the user's strength, and
-                        increases attack rate by <b>10%</b>.
-                    </p>
-                    <p>
-                        If Overdrive is granted while already active, it will be raised one level. Conversely,
-                        it will be lowered one level when the effect's remaining time is depleted. If the effect
-                        is at level one when this time is depleted, it will instead be removed entirely.
-                    </p>
-
-                    <p>
-                        If the user has Resonant Memory, a more powerful variant called <b>Fusion Strike</b>
-                        will be used instead.
-                    </p>
-
-                    <p>
-                        <b>Fusion Strike</b> deals damage to enemies in a line (3 hits of
-                        <b class="water">768%</b> water damage), reduces their defense (<b>20%</b> for 10
-                        seconds) and grants all teammates the “Overdrive” effect. Afflicted foes take extra
-                        damage (3 hits of <b class="water">1152%</b> water damage). The defense reduction does
-                        not stack. (<b class="other">Might</b>: 200)
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <br>
-
-    <div class="h1">Co-abilities</div>
-    <hr>
-    <div class="flexbox">
-        <table class="dlssa" style="width: 50%">
-            <tr>
-                <th style="padding-bottom: 5px">
-                    <div class="flexbox center">
-                        <img src="../assets/ren/ca.png" width="32px" style="margin: 0 15px 0 0;" alt="Co-ability icon">
-                        <span class="h3">Dragon Haste +15%</span>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="flexbox center">
-                        <button class="navbutton">Lv1</button>
-                        <button class="navbutton">Lv2</button>
-                        <button class="navbutton">Lv3</button>
-                        <button class="navbutton">Lv4</button>
-                        <button class="navbutton" id="active">Lv5</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Increases dragon gauge fill rate by <b>15%</b>.<br>
-                        Benefits your whole team. (<b class="other">Might</b>: 320)
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <table class="dlssa" style="width: 50%">
-            <tr>
-                <th style="padding-bottom: 5px">
-                    <div class="flexbox center">
-                        <img src="../assets/ren/cca.png" width="32px" style="margin: 0 15px 0 0;" alt="Chain Co-ability icon">
-                        <span class="h3">(Water) HP Below 40% = Strength +15%</span>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="flexbox center">
-                        <button class="navbutton">Lv1</button>
-                        <button class="navbutton">Lv2</button>
-                        <button class="navbutton">Lv3</button>
-                        <button class="navbutton">Lv4</button>
-                        <button class="navbutton" id="active">Lv5</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        If a team member is attuned to Water:<br>
-                        increases their strength by <b>15%</b> when their HP is <b>40%</b> or below.<br>
-                        Benefits your whole team. (<b class="other">Might</b>: 320)
-                    </p>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <br>
-
-    <div class="h1">Abilities</div>
-    <hr>
-    <div class="flexbox">
-        <table class="dlssa" style="width: 100%">
-            <tr>
-                <th style="padding-bottom: 5px">
-                    <div class="flexbox center">
-                        <!--<img src="../assets/ren/a1.png" width="32px" style="margin: 0 15px 0 0;" alt="Boundarywyrm's Echo icon">-->
-                        <span class="h3">Boundarywyrm's Echo II</span>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="flexbox center">
-                        <button class="navbutton">Lv1</button>
-                        <button class="navbutton" id="active">Lv2</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Reduces susceptibility to freezing by <b>100%</b>.</p>
-                    <p>
-                        Fills <b>50%</b> of the dragon gauge at the start of quests and extends shapeshift time
-                        by <b>100%</b>, but the maximum amount of the dragon gauge that abilities can fill at
-                        the start of quests will be limited to <b>50%</b> for the entire team and doubles the
-                        amount of dragon energy required to shapeshift (The user's maximum dragon energy will
-                        not be increased).
-                    </p>
-                    <p>
-                        When shapeshifting, the user will transform into
-                        <a href="javascript:;">True Boundarywyrm</a> regardless of what dragon they are equipped
-                        with. While they are shapeshifted, this ability grants them a dragon strike that deals
-                        damage to enemies directly ahead and enemies near those targets.
-                    </p>
-
-                    <p>
-                        Additionally, inflicts the “Forgotten Memory” debuff on the user at the start of quests.
-                        During Forgotten Memory, the user cannot shapeshift. Also, grants the user a charge
-                        gauge. The charge gauge fills when standard attacks and force strikes successfully
-                        connect. Filling the bar will consume “Forgotten Memory” and grant the user Resonant
-                        Memory. The user's charge gauge will not fill when they have the Resonant Memory effect.
-                        (<b class="other">Might</b>: 100)
-                    </p>
-
-                    Resonant Memory grants the user the following effects:
-                    <ul>
-                        <li>Summons <a href="javascript:;">Boundarywyrm's Shadow</a>. While summoned,
-                            Boundarywyrm's Shadow will attack together with the user.</li>
-                        <li>The user's standard attacks are changed.</li>
-                        <li>The user's force strikes are changed. They will also inflict frostbite and dispel
-                            one enemy buff.</li>
-                    </ul>
-
-                    <p>
-                        Upon shapeshift, Resonant Memory will be consumed. When their shapeshift is undone, the
-                        charge gauge will be reset and Forgotten Memory will be reapplied.
-                        (<b class="other">Might</b>: 100)
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <table class="dlssa" style="width: 100%">
-            <tr>
-                <th style="padding-bottom: 5px">
-                    <div class="flexbox center">
-                        <img src="../assets/ren/a2.png" width="32px" style="margin: 0 15px 0 0;" alt="Kinda Like Him! icon">
-                        <span class="h3">Kinda Like Him! II</span>
-                    </div>
-                </th>
-                
-            </tr>
-            <tr>
-                <td>
-                    <div class="flexbox center">
-                        <button class="navbutton">Lv1</button>
-                        <button class="navbutton" id="active">Lv2</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>
-                        Reduces susceptibility to burning and stun by 100%. (<b class="other">Might</b>: 100)
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <table class="dlssa" style="width: 100%">
-            <tr>
-                <th style="padding-bottom: 5px">
-                    <div class="flexbox center">
-                        <!--<img src="../assets/ren/a3.png" width="32px" style="margin: 0 15px 0 0;" alt="Aura Boost II icon">-->
-                        <span class="h3">Aura Boost II</span>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="flexbox center">
-                        <button class="navbutton">Lv1</button>
-                        <button class="navbutton" id="active">Lv2</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Resonant Memory grants the user the following effects:</p>
-                    <ul>
-                        <li>Summons Boundarywyrm's Shadow. While summoned, Boundarywyrm's Shadow will attack
-                            together with the user.</li>
-                        <li>The user's standard attacks are changed.</li>
-                        <li>The user's force strikes are changed. They will also inflict frostbite and dispel
-                            one enemy buff. (<b class="other">Might</b>: 100)</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <br>
-
-    <div class="h1">Notes</div>
-    <hr>
-    <div class="flexbox column">
-        <p>
-            The "Overdrive" effect is immune to Curse of Nihility.<br>
-            Ren's standard attacks and force strikes will fill CP for their Charge Gauge.
-        </p>
-        <div class="flexbox center" style="width: 100%;">
-            <table class="dlnotes" style="width: 50%;">
-                <tr>
-                    <th>Bonus</th>
-                    <th>Total CP Needed</th>
-                </tr>
-                <tr><td colspan="2"><hr></td></tr>
-                <tr>
-                    <td>Resonant Memory</td>
-                    <td>100</td>
-                </tr>
-            </table>
+    <article>
+        <div class="textbox"><div class="h1">Ren/Gameplay</div></div>
+        
+        <div class="flexbox center">
+            <a href="../ren" class="navbutton">General</a>
+            <a href="javascript:;" class="navbutton" id="active">Gameplay</a>
+            <a href="quotes" class="navbutton">Quotes</a>
+            <a href="stories" class="navbutton">Stories</a>
+            <a href="gallery" class="navbutton">Gallery</a>
         </div>
 
         <br>
-    
-        <p>
-            When Resonant Memory is active, their standard attacks and force strikes will deal more damage than a
-            normal
-            Sword combo. Their force strike will also dispel one enemy buff.
-        </p>
-        <div class="flexbox center" style="width: 100%;">
-            <table class="dlnotes" style="width: 100%;">
+        
+        <div class="textbox">
+            <div class="h1">Stats</div>
+            <hr>    
+            <table class="transparent">
                 <tr>
-                    <th>Attack</th>
-                    <th>Damage Multiplier</th>
-                    <th>Hits</th>
-                    <th>SP Gain</th>
-                    <th>OD Multiplier</th>
-                </tr>
-                <tr><th colspan="5"><hr></th></tr>
-                <tr>
-                    <td>Combo 1</td>
-                    <td>110%</td>
-                    <td>1</td>
-                    <td>150</td>
-                    <td>x1</td>
+                    <th>Element</th>
+                    <td><img src="../assets/element/water.png" width="18" style="vertical-align: middle; margin: 0;" alt="Water"></td>
                 </tr>
                 <tr>
-                    <td>Combo 2</td>
-                    <td>119%</td>
-                    <td>1</td>
-                    <td>150</td>
-                    <td>x1</td>
+                    <th>Weapon</th>
+                    <td><img src="../assets/weapon/sword.png" width="18" style="vertical-align: middle; margin: 0;" alt="Sword"></td>
                 </tr>
                 <tr>
-                    <td>Combo 3</td>
-                    <td>136%</td>
-                    <td>1</td>
-                    <td>196</td>
-                    <td>x1</td>
+                    <th>Class</th>
+                    <td><img src="../assets/unittype/attack.png" height="18" style="vertical-align: middle; margin: 0;" alt="Attack Unit"></td>
                 </tr>
                 <tr>
-                    <td>Combo 4</td>
-                    <td>130%</td>
-                    <td>1</td>
-                    <td>265</td>
-                    <td>x1</td>
+                    <th>Share Points</th>
+                    <td><img src="../assets/skill-share.png" width="24" style="vertical-align: middle; margin: 0;" alt="Skill share icon"> 10</td>
                 </tr>
                 <tr>
-                    <td>Combo 5</td>
-                    <td>210%</td>
-                    <td>1</td>
-                    <td>391</td>
-                    <td>x1</td>
+                    <th>Base Rarity</th>
+                    <td><img src="../assets/rarity/5.png" height="18" style="vertical-align: middle; margin: 0;" alt="5"></td>
                 </tr>
-            </table>
-        </div>
-
-        <br>
-
-        <div class="flexbox center" style="width: 100%;">
-            <table class="dlnotes" style="width: 100%;">
+                <tr><td><br></td></tr>
                 <tr>
-                    <th>FS Level</th>
-                    <th>Damage Multiplier</th>
-                    <th>Type</th>
-                    <th>Hits</th>
-                    <th>SP Gain</th>
-                    <th>OD Modifier</th>
-                    <th>Effect</th>
+                    <th>Level 80 HP</th>
+                    <td>452</td>
                 </tr>
-                <tr><th colspan="7"><hr></th></tr>
                 <tr>
-                    <td>Lv1</td>
-                    <td>220%</td>
-                    <td>Pivot, Directional</td>
-                    <td>1</td>
-                    <td>400</td>
-                    <td>x1</td>
+                    <th>Level 80 Strength</th>
+                    <td>302</td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="tooltip">Total Max HP
+                            <span class="ttpopup">5★ Max HP with all Mana Circle/Spiral Nodes and Bonus</span>
+                        </span>
+                    </th>
                     <td>
-                        Inflicts <img src="../assets/affliction/frostbite.png" style="width: 32px; vertical-align: middle; margin: 0;" alt="Frostbite icon"> Frostbite<br>
-                        <img src="../assets/dispel.png" style="width: 32px; vertical-align: middle;" alt="Dispel icon"> Dispels one enemy buff
+                        <span class="tooltip">754 (452 + 277 + 25)
+                            <span class="ttpopup">Total (5★ Max + Mana Circle/Spiral Node Stats + Mana Circle Bonus)</span>
+                        </span>
                     </td>
                 </tr>
                 <tr>
-                    <td>Lv2</td>
-                    <td>230%</td>
-                    <td>Pivot, Directional</td>
-                    <td>1</td>
-                    <td>400</td>
-                    <td>x1</td>
+                    <th>
+                        <span class="tooltip">Total Max Strength
+                            <span class="ttpopup">5★ Max Str with all Mana Circle/Spiral Nodes and Bonus</span>
+                        </span>
+                    </th>
                     <td>
-                        Inflicts <img src="../assets/affliction/frostbite.png" style="width: 32px; vertical-align: middle; margin: 0;" alt="Frostbite icon"> Frostbite<br>
-                        <img src="../assets/dispel.png" style="width: 32px; vertical-align: middle;" alt="Dispel icon"> Dispels one enemy buff</td>
+                        <span class="tooltip">505 (302 + 185 + 18)
+                            <span class="ttpopup">Total (5★ Max + Mana Circle/Spiral Node Stats + Mana Circle Bonus)</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="tooltip">Base Min Might
+                            <span class="ttpopup">Minimum HP + Minimum Str + Lv. 1 Co-Ability Might + Lv. 1 Skill 1 Might</span>
+                        </span>
+                    </th>
+                    <td>
+                        <span class="tooltip">376
+                            <span class="ttpopup">64 + 42 + 170 + 100</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <span class="tooltip">Base Max Might
+                            <span class="ttpopup">
+                                Does not include external buffs (e.g. Dragons, Halidom, Wyrmprints, etc.)<br>
+                                <br>
+                                Max 5★ HP + Max 5★ Str + Total Skill Might + Co-Ability Might + Total Ability Might
+                                + Force Strike Lv. 2 Might
+                            </span>
+                        </span>
+                    </th>
+                    <td>
+                        <span class="tooltip">2499
+                            <span class="ttpopup">754 + 505 + (300 + 200) + 320 + (100 + 100 + 100) + 120</span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Defense</th>
+                    <td>10</td>
                 </tr>
             </table>
         </div>
-
-        <ul>
-            <li>Inflicts <img src="../assets/affliction/frostbite.png" style="width: 32px; vertical-align: middle; margin: 0;" alt="Frostbite icon"> Frostbite with <b>150%</b> chance and deals <span id="water">41%</span> water damage every
-                2.9 seconds for 21 seconds.</li>
-        </ul>
 
         <br>
-
-        Boundarywyrm's Shadow will attack together when Ren performs certain actions.
-        <div class="flexbox center" style="width: 100%;">
-            <table class="dlnotes" style="width: 75%;">
-                <tr>
-                    <th>Action</th>
-                    <th>Damage Multiplier</th>
-                    <th>Hits</th>
-                    <th>Range</th>
-                </tr>
-                <tr><th colspan="4"><hr></th></tr>
-                <tr>
-                    <td>Combo 3</td>
-                    <td>252%</td>
-                    <td>1</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Combo 5</td>
-                    <td>252%</td>
-                    <td>1</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Force Strike</td>
-                    <td>300%</td>
-                    <td>1</td>
-                    <td>5</td>
-                </tr>
-            </table>
+        
+        <div class="textbox">
+            <div class="h1">Skills</div>
+            <hr>
+            <div class="flexbox">
+                <table class="dlssa" style="width: 50%">
+                    <tr>
+                        <th style="padding-bottom: 5px">
+                            <div class="flexbox center">
+                                <img src="../assets/ren/s1.png" width="32" style="margin: 0 15px 0 0;" alt="Twinkling Flurry icon">
+                                <span class="h3">Twinkling Flurry</span>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flexbox center">
+                                <button class="navbutton">Lv1</button>
+                                <button class="navbutton">Lv2</button>
+                                <button class="navbutton" id="active">Lv3</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Shareable <img src="../assets/skill-share.png" width="24" style="vertical-align: middle; margin: 0;" alt="Skill share icon"> 5
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b class="other">SP Cost</b>: <b>3380</b><br>
+                            <b class="other">Shared SP Cost</b>: <b>8450</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Deals damage to enemies directly ahead (4 hits of <b class="water">124%</b>, 2 hits of
+                                <b class="water">284%</b>, and 1 hit of <b class="water">396%</b> water damage) inflicts
+                                frostbite (dealing <b class="water">41%</b> water damage every 2.9 seconds for 21
+                                seconds - with 120% chance), and restores HP to the user with 30% Recovery Potency. If
+                                the user has Resonant Memory, a variant called <b>Subzero Slash</b> will be used
+                                instead.
+                            </p>
+        
+                            <p>
+                                <b>Subzero Slash</b> deals damage to enemies directly ahead (1 hit of
+                                <b class="water">750%</b> water damage and 1 hit of
+                                <b class="water">834%</b> water damage) and raises the dragon gauge by <b>50 DP</b> if
+                                the attack connects. Afflicted foes take extra damage (1 hit of
+                                <b class="water">975%</b> water damage and 1 hit of <b class="water">1084.2%</b> water
+                                damage).
+                            </p>
+        
+                            <p>
+                                If this skill is used as a Helper Skill or a Shared Skill, it will deal 4 hits of
+                                <b class="water">124%</b>, 2 hits of <b class="water">284%</b>, and 1 hit of
+                                <b class="water">396%</b> water damage to enemies directly ahead, inflict
+                                frostbite for 21 seconds - dealing <b class="water">41%</b> water damage every 2.9
+                                seconds - with 120% chance, and restore HP to the user with 30% Recovery Potency.
+                                (<b class="other">Might</b>: 300)
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="dlssa" style="width: 50%">
+                    <tr>
+                        <th style="padding-bottom: 5px">
+                            <div class="flexbox center">
+                                <img src="../assets/ren/s2.png" width="32" style="margin: 0 15px 0 0;" alt="Frozen Surge icon">
+                                <span class="h3">Frozen Surge</span>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flexbox center">
+                                <button class="navbutton">Lv1</button>
+                                <button class="navbutton" id="active">Lv2</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b class="other">SP Cost</b>: <b>9063</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Deals damage to surrounding enemies (3 hits of <b class="water">480%</b> water damage),
+                                reduces their defense (<b>15%</b> for 10 seconds), and grants all teammates the
+                                "Overdrive" effect. The defense reduction does not stack.
+                            </p>
+                            <p>
+                                The skill gauge for this skill can be filled by attacking enemies, but it will also
+                                gradually fill automatically.
+                            </p>
+                            <p>
+                                Overdrive has three progressively more powerful levels.<br>
+                                Lv. 1: For 60 seconds, increases strength by <b>10%</b>.<br>
+                                Lv. 2: For 60 seconds, increases strength by <b>15%</b>.<br>
+                                Lv. 3: For 60 seconds, grants overdamage based on <b>20%</b> of the user's strength, and
+                                increases attack rate by <b>10%</b>.
+                            </p>
+                            <p>
+                                If Overdrive is granted while already active, it will be raised one level. Conversely,
+                                it will be lowered one level when the effect's remaining time is depleted. If the effect
+                                is at level one when this time is depleted, it will instead be removed entirely.
+                            </p>
+        
+                            <p>
+                                If the user has Resonant Memory, a more powerful variant called <b>Fusion Strike</b>
+                                will be used instead.
+                            </p>
+        
+                            <p>
+                                <b>Fusion Strike</b> deals damage to enemies in a line (3 hits of
+                                <b class="water">768%</b> water damage), reduces their defense (<b>20%</b> for 10
+                                seconds) and grants all teammates the “Overdrive” effect. Afflicted foes take extra
+                                damage (3 hits of <b class="water">1152%</b> water damage). The defense reduction does
+                                not stack. (<b class="other">Might</b>: 200)
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
-    </div>
+        
+        <br>
 
+        <div class="textbox">
+            <div class="h1">Co-abilities</div>
+            <hr>
+            <div class="flexbox">
+                <table class="dlssa" style="width: 50%">
+                    <tr>
+                        <th style="padding-bottom: 5px">
+                            <div class="flexbox center">
+                                <img src="../assets/ren/ca.png" width="32" style="margin: 0 15px 0 0;" alt="Co-ability icon">
+                                <span class="h3">Dragon Haste +15%</span>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flexbox center">
+                                <button class="navbutton">Lv1</button>
+                                <button class="navbutton">Lv2</button>
+                                <button class="navbutton">Lv3</button>
+                                <button class="navbutton">Lv4</button>
+                                <button class="navbutton" id="active">Lv5</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Increases dragon gauge fill rate by <b>15%</b>.<br>
+                                Benefits your whole team. (<b class="other">Might</b>: 320)
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="dlssa" style="width: 50%">
+                    <tr>
+                        <th style="padding-bottom: 5px">
+                            <div class="flexbox center">
+                                <img src="../assets/ren/cca.png" width="32" style="margin: 0 15px 0 0;" alt="Chain Co-ability icon">
+                                <span class="h3">(Water) HP Below 40% = Strength +15%</span>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flexbox center">
+                                <button class="navbutton">Lv1</button>
+                                <button class="navbutton">Lv2</button>
+                                <button class="navbutton">Lv3</button>
+                                <button class="navbutton">Lv4</button>
+                                <button class="navbutton" id="active">Lv5</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                If a team member is attuned to Water:<br>
+                                increases their strength by <b>15%</b> when their HP is <b>40%</b> or below.<br>
+                                Benefits your whole team.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="textbox">
+            <div class="h1">Abilities</div>
+            <hr>
+            <div class="flexbox">
+                <table class="dlssa" style="width: 100%">
+                    <tr>
+                        <th style="padding-bottom: 5px">
+                            <div class="flexbox center">
+                                <!--<img src="../assets/ren/a1.png" width="32" style="margin: 0 15px 0 0;" alt="Boundarywyrm's Echo icon">-->
+                                <span class="h3">Boundarywyrm's Echo II</span>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flexbox center">
+                                <button class="navbutton">Lv1</button>
+                                <button class="navbutton" id="active">Lv2</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Reduces susceptibility to freezing by <b>100%</b>.</p>
+                            <p>
+                                Fills <b>50%</b> of the dragon gauge at the start of quests and extends shapeshift time
+                                by <b>100%</b>, but the maximum amount of the dragon gauge that abilities can fill at
+                                the start of quests will be limited to <b>50%</b> for the entire team and doubles the
+                                amount of dragon energy required to shapeshift (The user's maximum dragon energy will
+                                not be increased).
+                            </p>
+                            <p>
+                                When shapeshifting, the user will transform into
+                                <a href="javascript:;">Kyurem</a> regardless of what dragon they are equipped with. While
+                                they are shapeshifted, this ability grants them a dragon strike that deals damage to enemies
+                                directly ahead and enemies near those targets.
+                            </p>
+        
+                            <p>
+                                Additionally, inflicts the “Forgotten Memory” debuff on the user at the start of quests.
+                                During Forgotten Memory, the user cannot shapeshift. Also, grants the user a charge
+                                gauge. The charge gauge fills when standard attacks and force strikes successfully
+                                connect. Filling the bar will consume “Forgotten Memory” and grant the user Resonant
+                                Memory. The user's charge gauge will not fill when they have the Resonant Memory effect.
+                                (<b class="other">Might</b>: 100)
+                            </p>
+        
+                            Resonant Memory grants the user the following effects:
+                            <ul>
+                                <li>Summons <a href="javascript:;">Boundarywyrm's Shadow</a>. While summoned,
+                                    Boundarywyrm's Shadow will attack together with the user.</li>
+                                <li>The user's standard attacks are changed.</li>
+                                <li>The user's force strikes are changed. They will also inflict frostbite and dispel
+                                    one enemy buff.</li>
+                            </ul>
+        
+                            <p>
+                                Upon shapeshift, Resonant Memory will be consumed. When their shapeshift is undone, the
+                                charge gauge will be reset and Forgotten Memory will be reapplied.
+                                (<b class="other">Might</b>: 100)
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="dlssa" style="width: 100%">
+                    <tr>
+                        <th style="padding-bottom: 5px">
+                            <div class="flexbox center">
+                                <img src="../assets/ren/a2.png" width="32" style="margin: 0 15px 0 0;" alt="Kinda Like Him! icon">
+                                <span class="h3">Kinda Like Him! II</span>
+                            </div>
+                        </th>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flexbox center">
+                                <button class="navbutton">Lv1</button>
+                                <button class="navbutton" id="active">Lv2</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                Reduces susceptibility to burning and stun by 100%. (<b class="other">Might</b>: 100)
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <table class="dlssa" style="width: 100%">
+                    <tr>
+                        <th style="padding-bottom: 5px">
+                            <div class="flexbox center">
+                                <!--<img src="../assets/ren/a3.png" width="32" style="margin: 0 15px 0 0;" alt="Aura Boost II icon">-->
+                                <span class="h3">Aura Boost II</span>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="flexbox center">
+                                <button class="navbutton">Lv1</button>
+                                <button class="navbutton" id="active">Lv2</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Resonant Memory grants the user the following effects:</p>
+                            <ul>
+                                <li>Summons Boundarywyrm's Shadow. While summoned, Boundarywyrm's Shadow will attack
+                                    together with the user.</li>
+                                <li>The user's standard attacks are changed.</li>
+                                <li>The user's force strikes are changed. They will also inflict frostbite and dispel
+                                    one enemy buff. (<b class="other">Might</b>: 100)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div class="textbox">
+            <div class="h1">Notes</div>
+            <hr>
+            <p>The "Overdrive" effect is immune to Curse of Nihility.</p>
+            <p>Ren's standard attacks and force strikes will fill CP for their Charge Gauge.</p>
+            <div class="flexbox center" style="width: 100%;">
+                <table class="dlnotes" style="width: 50%;">
+                    <tr>
+                        <th>Bonus</th>
+                        <th>Total CP Needed</th>
+                    </tr>
+                    <tr><td colspan="2"><hr></td></tr>
+                    <tr>
+                        <td>Resonant Memory</td>
+                        <td>100</td>
+                    </tr>
+                </table>
+            </div>
+        
+            <p>
+                When Resonant Memory is active, their standard attacks and force strikes will deal more damage than a
+                normal
+                Sword combo. Their force strike will also dispel one enemy buff.
+            </p>
+            <div class="flexbox center" style="width: 100%;">
+                <table class="dlnotes" style="width: 100%;">
+                    <tr>
+                        <th>Attack</th>
+                        <th>Damage Multiplier</th>
+                        <th>Hits</th>
+                        <th>SP Gain</th>
+                        <th>OD Multiplier</th>
+                    </tr>
+                    <tr><th colspan="5"><hr></th></tr>
+                    <tr>
+                        <td>Combo 1</td>
+                        <td>110%</td>
+                        <td>1</td>
+                        <td>150</td>
+                        <td>x1</td>
+                    </tr>
+                    <tr>
+                        <td>Combo 2</td>
+                        <td>119%</td>
+                        <td>1</td>
+                        <td>150</td>
+                        <td>x1</td>
+                    </tr>
+                    <tr>
+                        <td>Combo 3</td>
+                        <td>136%</td>
+                        <td>1</td>
+                        <td>196</td>
+                        <td>x1</td>
+                    </tr>
+                    <tr>
+                        <td>Combo 4</td>
+                        <td>130%</td>
+                        <td>1</td>
+                        <td>265</td>
+                        <td>x1</td>
+                    </tr>
+                    <tr>
+                        <td>Combo 5</td>
+                        <td>210%</td>
+                        <td>1</td>
+                        <td>391</td>
+                        <td>x1</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="flexbox center" style="width: 100%;">
+                <table class="dlnotes" style="width: 100%;">
+                    <tr>
+                        <th>FS Level</th>
+                        <th>Damage Multiplier</th>
+                        <th>Type</th>
+                        <th>Hits</th>
+                        <th>SP Gain</th>
+                        <th>OD Modifier</th>
+                        <th>Effect</th>
+                    </tr>
+                    <tr><th colspan="7"><hr></th></tr>
+                    <tr>
+                        <td>Lv1</td>
+                        <td>220%</td>
+                        <td>Pivot, Directional</td>
+                        <td>1</td>
+                        <td>400</td>
+                        <td>x1</td>
+                        <td>
+                            Inflicts <img src="../assets/affliction/frostbite.png" width="18" style="vertical-align: middle; margin: 0;" alt="Frostbite icon"> Frostbite<br>
+                            <img src="../assets/dispel.png" width="32" style="vertical-align: middle; margin: 0;" alt="Dispel icon"> Dispels one enemy buff
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lv2</td>
+                        <td>230%</td>
+                        <td>Pivot, Directional</td>
+                        <td>1</td>
+                        <td>400</td>
+                        <td>x1</td>
+                        <td>
+                            Inflicts <img src="../assets/affliction/frostbite.png" width="18" style="vertical-align: middle; margin: 0;" alt="Frostbite icon"> Frostbite<br>
+                            <img src="../assets/dispel.png" width="32" style="vertical-align: middle; margin: 0;" alt="Dispel icon"> Dispels one enemy buff</td>
+                    </tr>
+                </table>
+            </div>
+
+            <ul>
+                <li>Inflicts <img src="../assets/affliction/frostbite.png" width="18" style="vertical-align: middle; margin: 0;" alt="Frostbite icon"> Frostbite with <b>150%</b> chance and deals <span id="water">41%</span> water damage every
+                    2.9 seconds for 21 seconds.</li>
+            </ul>
+    
+            <p>Boundarywyrm's Shadow will attack together when Ren performs certain actions.</p>
+            <div class="flexbox center" style="width: 100%;">
+                <table class="dlnotes" style="width: 75%;">
+                    <tr>
+                        <th>Action</th>
+                        <th>Damage Multiplier</th>
+                        <th>Hits</th>
+                        <th>Range</th>
+                    </tr>
+                    <tr><th colspan="4"><hr></th></tr>
+                    <tr>
+                        <td>Combo 3</td>
+                        <td>252%</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Combo 5</td>
+                        <td>252%</td>
+                        <td>1</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Force Strike</td>
+                        <td>333%</td>
+                        <td>1</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </article>
+
+    <footer></footer>
 </body>
-
-<footer>
-    [insert footer here]
-</footer>
 
 </html>

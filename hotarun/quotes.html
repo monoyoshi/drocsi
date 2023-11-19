@@ -10,17 +10,17 @@
 
     <link rel="stylesheet" href="../../css/main.css">
 
-    <link rel="stylesheet" href="../../css/projects.css">
-
     <link rel="stylesheet" href="../../css/dragalia.css">
 
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="../../javascript/main.js"></script>
-    <script src="../../javascript/footer.js"></script>
+    <script src="../../javascript/boilerplate.js"></script>
     <script>
-        // insert footer
-        window.addEventListener("load", function () {
-            document.getElementsByTagName("footer")[0].innerHTML = footer(2);
+        $(document).ready(function () {
+            $("header").html(header(2, "projects", "wikyu"));
+            $("footer").html(footer(2));
         });
     </script>
 
@@ -28,243 +28,229 @@
     <audio></audio>
 
     <script src="https://kit.fontawesome.com/082d466fdc.js" crossorigin="anonymous"></script>
-
-    <!-- topbar -->
-    <button onClick="topScroll()" class="topbar"></button>
-
-    <!-- sidebar navtab -->
-    <div class="navtab">
-        <a href="../../" id="home">home</a>
-        <a href="../../about" id="about">about me</a>
-        <a href="../../art" id="art">art</a>
-        <a href="../../projects" id="projects">projects</a>
-        <a href="../../contact" id="contact">contact</a>
-    </div>
-
-    <!-- light mode / dark mode toggle -->
-    <div class="flexbox column center" id="pullswitch">
-        <div class="string"></div>
-        <button class="lightdark-mode"></button>
-    </div>
 </head>
 
 <body>
-    <div class="h1">Hotarun/Quotes</div>
+    <header></header>
 
-    <br>
+    <article>
+        <div class="textbox"><div class="h1">Hotarun/Quotes</div></div>
 
-    <div class="flexbox center">
-        <a href="../hotarun" class="navbutton">General</a>
-        <a href="gameplay" class="navbutton">Gameplay</a>
-        <a href="javascript:;" class="navbutton" id="active">Quotes</a>
-        <a href="stories" class="navbutton">Stories</a>
-        <a href="gallery" class="navbutton">Gallery</a>
-    </div>
+        <br>
 
-    <br>
+        <div class="flexbox center">
+            <a href="../hotarun" class="navbutton">General</a>
+            <a href="gameplay" class="navbutton">Gameplay</a>
+            <a href="javascript:;" class="navbutton" id="active">Quotes</a>
+            <a href="stories" class="navbutton">Stories</a>
+            <a href="gallery" class="navbutton">Gallery</a>
+        </div>
 
-    <div class="flexbox center">
-        <a href="javascript:;" class="navbutton" id="active">English</a>
-        <a href="javascript:;" class="navbutton">日本語</a>
-    </div>
+        <br>
 
-    <br>
+        <div class="flexbox center">
+            <a href="javascript:;" class="navbutton" id="active">English</a>
+            <a href="javascript:;" class="navbutton">日本語</a>
+        </div>
 
-    <div class="h2">On Sortied</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+        <br>
 
-    <br>
+        <div class="textbox">
+            <div class="h2">On Sortied</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">On Entering a Room</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">On Entering a Room</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">When Quest Begins</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">When Quest Begins</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">Response to Beginning of a Quest</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <br>
+            <br>
 
-    <div class="h2">When Controlling Character in Quest</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Response to Beginning of a Quest</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">When Receiving a Heal</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">When Controlling Character in Quest</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">When Entering a Boss' Room</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">When Receiving a Heal</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Response to Entering a Boss' Room</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">When Entering a Boss' Room</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Upon Getting to Low Health</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Response to Entering a Boss' Room</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Upon Opening A Chest</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Upon Getting to Low Health</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Boss on Low Health</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Upon Opening A Chest</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Boss Enters Break State</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Boss on Low Health</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Rare Enemy Spawns</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Boss Enters Break State</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Upon Death</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Rare Enemy Spawns</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Upon Revival</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Upon Death</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">When Using Weapon/Shared Skills</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Damage: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Buff Self: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Buff Ally: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Debuff Enemy: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heal Ally: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heal Self?????</div>
+            <div class="h2">Upon Revival</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Player Uses Damaging Skill</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">When Using Weapon/Shared Skills</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Damage: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Buff Self: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Buff Ally: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Debuff Enemy: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heal Ally: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Heal Self: ?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">When Shapeshifting is Ready</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Player Uses Damaging Skill</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Shapeshifting into Dragon</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">When Shapeshifting is Ready</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <br>
+            <br>
 
-    <div class="h2">Idle During Quest</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="h2">Shapeshifting into Dragon</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">Idle During Quest</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">Quest Clear</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">Quest Clear</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">Quest Failure</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
-    <hr>
-    <br>
+            <div class="h2">Quest Failure</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">Home Screen Walking</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
+            <hr>
+            <br>
 
-    <br>
+            <div class="h2">Home Screen Walking</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">Home Screen Inside</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">Home Screen Inside</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">Home Screen Portrait</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">Home Screen Portrait</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">Collection Portrait</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">Collection Portrait</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">Limited Lines</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Halloween: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Dragonyule: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>New Year: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Giving Valentine's: ?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Receiving Valentine's: ?????</div>
+            <br>
 
-    <br>
+            <div class="h2">Limited Lines</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Halloween: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Dragonyule: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>New Year: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Giving Valentine's: ?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>Receiving Valentine's: ?????</div>
 
-    <div class="h2">At the Halidom</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">At the Halidom</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">New Mana Circle Unlocked</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
 
-    <br>
+            <div class="h2">New Mana Circle Unlocked</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
 
-    <div class="h2">On Mana Circle Fully Unbound</div>
-    <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+            <br>
+
+            <div class="h2">On Mana Circle Fully Unbound</div>
+            <div class="flexbox center horizontal"><button onclick="playback('../assets/hotarun/audio/.mp3')" class="audioblock"><i class="fas fa-play"></i></button>?????</div>
+        </div>
+    </article>
+
+    <footer></footer>
 </body>
-
-<footer>
-    [insert footer here]
-</footer>
 
 </html>

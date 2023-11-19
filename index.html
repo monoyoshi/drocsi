@@ -10,45 +10,29 @@
 
     <link rel="stylesheet" href="../css/main.css">
 
-    <link rel="stylesheet" href="../css/projects.css">
-
     <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="../javascript/main.js"></script>
-    <script src="../javascript/footer.js"></script>
+    <script src="../javascript/boilerplate.js"></script>
     <script>
-        // insert footer
-        window.addEventListener("load", function () {
-            document.getElementsByTagName("footer")[0].innerHTML = footer(1);
+        $(document).ready(function () {
+            $("header").html(header(1, "projects"));
+            $("footer").html(footer(1));
         });
     </script>
-
-    <!-- topbar -->
-    <button onClick="topScroll()" class="topbar"></button>
-
-    <!-- sidebar navtab -->
-    <div class="navtab">
-        <a href="../" id="home">home</a>
-        <a href="../about" id="about">about me</a>
-        <a href="../art" id="art">art</a>
-        <a href="javascript:;" id="projects" style="cursor: default;">projects</a>
-        <a href="../contact" id="contact">contact</a>
-    </div>
-
-    <!-- light mode / dark mode toggle -->
-    <div class="flexbox column center" id="pullswitch">
-        <div class="string"></div>
-        <button class="lightdark-mode"></button>
-    </div>
 </head>
 
 <body>
-    work-in-progress.png<br>
-    <a href="ren">ren</a><br>
-    <a href="hotarun">hotarun</a>
-</body>
+    <header></header>
 
-<footer>
-    [insert footer here]
-</footer>
+    <article>
+        probably an introduction page?<br>
+        <a href="ren">ren</a><br>
+        <a href="hotarun">hotarun</a>
+    </article>
+
+    <footer></footer>
+</body>
 
 </html>
