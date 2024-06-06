@@ -2,27 +2,42 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="../../assets/favicon.png">
-    <title>Ren/Gameplay | wikyu | monoyoshi.github.io</title>
+    <link rel="icon" type="image/png" href="../../global-assets/pictures/favicon.png">
+    <title>Ren/Gameplay | Project DROCSI | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../global-assets/css/colors.css">
+    <link rel="stylesheet" href="../../global-assets/css/fonts.css">
 
-    <link rel="stylesheet" href="../../css/dragalia.css">
+    <link rel="stylesheet" href="../../global-assets/css/style.css">
+
+    <!-- local -->
+    <link rel="stylesheet" href="../../global-assets/css/dust.css">
+    
+    <link rel="stylesheet" href="../css/dragalia.css">
 
     <!-- scripts -->
+    <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="../../javascript/main.js"></script>
-    <script src="../../javascript/boilerplate.js"></script>
+    <script src="../../global-assets/javascript/boilerplate.js"></script>
     <script>
+        // insert header and footer
         $(document).ready(function () {
-            $("header").html(header(2, "projects", "wikyu"));
-            $("footer").html(footer(2));
+            header(2, "projects");
+            footer(2);
         });
     </script>
+
+    <!-- local -->
+    <script src="../../global-assets/javascript/dust.js"></script>
+
+    <script src="https://kit.fontawesome.com/082d466fdc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,16 +45,25 @@
 
     <article>
         <div class="textbox"><div class="h1">Ren/Gameplay</div></div>
+
+        <br>
         
         <div class="flexbox center">
-            <a href="../ren" class="navbutton">General</a>
-            <a href="javascript:;" class="navbutton" id="active">Gameplay</a>
-            <a href="quotes" class="navbutton">Quotes</a>
-            <a href="stories" class="navbutton">Stories</a>
-            <a href="gallery" class="navbutton">Gallery</a>
+            <a href="../ren" class="button">General</a>
+            <a class="button" id="active">Gameplay</a>
+            <a href="quotes.html" class="button">Quotes</a>
+            <a class="button">Stories</a>
+            <a class="button">Gallery</a>
         </div>
 
         <br>
+
+        <div class="flexbox center">
+            <a class="button" id="active">English</a>
+            <a class="button">日本語</a>
+        </div>
+
+        <br class="big">
         
         <div class="textbox">
             <div class="h1">Stats</div>
@@ -134,7 +158,7 @@
             </table>
         </div>
 
-        <br>
+        <br class="medium">
         
         <div class="textbox">
             <div class="h1">Skills</div>
@@ -177,17 +201,16 @@
                                 <b class="water">284%</b>, and 1 hit of <b class="water">396%</b> water damage) inflicts
                                 frostbite (dealing <b class="water">41%</b> water damage every 2.9 seconds for 21
                                 seconds - with 120% chance), and restores HP to the user with 30% Recovery Potency. If
-                                the user has Resonant Memory, a variant called <b>Subzero Slash</b> will be used
+                                the skill is used during dragondrive, a variant called <b>Subzero Slash</b> will be used
                                 instead.
                             </p>
         
                             <p>
                                 <b>Subzero Slash</b> deals damage to enemies directly ahead (1 hit of
                                 <b class="water">750%</b> water damage and 1 hit of
-                                <b class="water">834%</b> water damage) and raises the dragon gauge by <b>50 DP</b> if
-                                the attack connects. Afflicted foes take extra damage (1 hit of
-                                <b class="water">975%</b> water damage and 1 hit of <b class="water">1084.2%</b> water
-                                damage).
+                                <b class="water">834%</b> water damage) and fills the user's dragondrive gauge by
+                                <b>450 UTP</b>. Afflicted foes take extra damage (1 hit of <b class="water">975%</b>
+                                water damage and 1 hit of <b class="water">1084.2%</b> water damage).
                             </p>
         
                             <p>
@@ -248,14 +271,14 @@
                             </p>
         
                             <p>
-                                If the user has Resonant Memory, a more powerful variant called <b>Fusion Strike</b>
-                                will be used instead.
+                                If this skill is used during dragondrive, a more powerful variant called
+                                <b>Fusion Strike</b> will be used instead.
                             </p>
         
                             <p>
                                 <b>Fusion Strike</b> deals damage to enemies in a line (3 hits of
                                 <b class="water">768%</b> water damage), reduces their defense (<b>20%</b> for 10
-                                seconds) and grants all teammates the “Overdrive” effect. Afflicted foes take extra
+                                seconds) and grants all teammates the "Overdrive" effect. Afflicted foes take extra
                                 damage (3 hits of <b class="water">1152%</b> water damage). The defense reduction does
                                 not stack. (<b class="other">Might</b>: 200)
                             </p>
@@ -265,7 +288,7 @@
             </div>
         </div>
         
-        <br>
+        <br class="medium">
 
         <div class="textbox">
             <div class="h1">Co-abilities</div>
@@ -333,7 +356,7 @@
             </div>
         </div>
 
-        <br>
+        <br class="medium">
         
         <div class="textbox">
             <div class="h1">Abilities</div>
@@ -344,7 +367,7 @@
                         <th style="padding-bottom: 5px">
                             <div class="flexbox center">
                                 <!--<img src="../assets/ren/a1.png" width="32" style="margin: 0 15px 0 0;" alt="Boundarywyrm's Echo icon">-->
-                                <span class="h3">Boundarywyrm's Echo II</span>
+                                <span class="h3">Boundarywyrm's Memory II</span>
                             </div>
                         </th>
                     </tr>
@@ -360,41 +383,22 @@
                         <td>
                             <p>Reduces susceptibility to freezing by <b>100%</b>.</p>
                             <p>
-                                Fills <b>50%</b> of the dragon gauge at the start of quests and extends shapeshift time
-                                by <b>100%</b>, but the maximum amount of the dragon gauge that abilities can fill at
-                                the start of quests will be limited to <b>50%</b> for the entire team and doubles the
-                                amount of dragon energy required to shapeshift (The user's maximum dragon energy will
-                                not be increased).
+                                Also, grants the user a dragondrive gauge and changes the shapeshift button into a
+                                dragondrive button. Tapping this button activates their dragondrive.
                             </p>
                             <p>
-                                When shapeshifting, the user will transform into
-                                <a href="javascript:;">Kyurem</a> regardless of what dragon they are equipped with. While
-                                they are shapeshifted, this ability grants them a dragon strike that deals damage to enemies
-                                directly ahead and enemies near those targets.
-                            </p>
-        
-                            <p>
-                                Additionally, inflicts the “Forgotten Memory” debuff on the user at the start of quests.
-                                During Forgotten Memory, the user cannot shapeshift. Also, grants the user a charge
-                                gauge. The charge gauge fills when standard attacks and force strikes successfully
-                                connect. Filling the bar will consume “Forgotten Memory” and grant the user Resonant
-                                Memory. The user's charge gauge will not fill when they have the Resonant Memory effect.
-                                (<b class="other">Might</b>: 100)
-                            </p>
-        
-                            Resonant Memory grants the user the following effects:
-                            <ul>
-                                <li>Summons <a href="javascript:;">Boundarywyrm's Shadow</a>. While summoned,
-                                    Boundarywyrm's Shadow will attack together with the user.</li>
-                                <li>The user's standard attacks are changed.</li>
-                                <li>The user's force strikes are changed. They will also inflict frostbite and dispel
-                                    one enemy buff.</li>
-                            </ul>
-        
-                            <p>
-                                Upon shapeshift, Resonant Memory will be consumed. When their shapeshift is undone, the
-                                charge gauge will be reset and Forgotten Memory will be reapplied.
-                                (<b class="other">Might</b>: 100)
+                                Dragondrive grants the following effects:
+                                <ul>
+                                    <li>
+                                        The user's standard attacks are changed and fill the user's dragondrive gauge if
+                                        they connect.
+                                    </li>
+                                    <li>
+                                        The user's force strikes are changed and deal damage to enemies directly ahead. They
+                                        will also fill their dragondrive gauge by <b>300 UTP</b> if they connect, inflict
+                                        frostbite and dispel one enemy buff. (<b class="other">Might</b>: 100)
+                                    </li>
+                                </ul>
                             </p>
                         </td>
                     </tr>
@@ -444,13 +448,14 @@
                     </tr>
                     <tr>
                         <td>
-                            <p>Resonant Memory grants the user the following effects:</p>
+                            <p>While the "Overdrive Lv. 3" effect is active, the following effects are granted:</p>
                             <ul>
-                                <li>Summons Boundarywyrm's Shadow. While summoned, Boundarywyrm's Shadow will attack
-                                    together with the user.</li>
-                                <li>The user's standard attacks are changed.</li>
-                                <li>The user's force strikes are changed. They will also inflict frostbite and dispel
-                                    one enemy buff. (<b class="other">Might</b>: 100)</li>
+                                <li>The user's strength is increased by 15%.</li>
+                                <li>The user's skill gauge fill rate is increased by 10%.</li>
+                                <li>
+                                    All elementally attuned damage taken by the user is reduced by 15%.
+                                    (<b class="other">Might</b>: 100)
+                                </li>
                             </ul>
                         </td>
                     </tr>
@@ -458,31 +463,44 @@
             </div>
         </div>
         
-        <br>
+        <br class="medium">
         
         <div class="textbox">
             <div class="h1">Notes</div>
             <hr>
             <p>The "Overdrive" effect is immune to Curse of Nihility.</p>
-            <p>Ren's standard attacks and force strikes will fill CP for their Charge Gauge.</p>
+            <p>
+                Boundarywyrm's Memory grants Ren access to a Dragondrive gauge, which allows them to use a Unique
+                Transformation instead of Shapeshifting. This uses Unique Transformation Points (UTP), a variant of
+                Dragon Points (DP).
+            </p>
             <div class="flexbox center" style="width: 100%;">
                 <table class="dlnotes" style="width: 50%;">
                     <tr>
-                        <th>Bonus</th>
-                        <th>Total CP Needed</th>
+                        <th>Notes</th>
+                        <th>UTP</th>
                     </tr>
                     <tr><td colspan="2"><hr></td></tr>
                     <tr>
-                        <td>Resonant Memory</td>
-                        <td>100</td>
+                        <td>Max UTP in gauge</td>
+                        <td>3,000</td>
+                    </tr>
+                    <tr>
+                        <td>Minimum UTP to transform (% of gauge)</td>
+                        <td>1,200 (40%)</td>
+                    </tr>
+                    <tr>
+                        <td>UTP depletion per second (% of gauge)</td>
+                        <td>75 (2.5%)</td>
                     </tr>
                 </table>
             </div>
         
             <p>
-                When Resonant Memory is active, their standard attacks and force strikes will deal more damage than a
-                normal
-                Sword combo. Their force strike will also dispel one enemy buff.
+                When Ren is in Dragondrive, their standard attacks and force strikes will restore Dragondrive gauge and
+                deal more damage than a normal Sword combo. Their force strike will also
+                <img src="../assets/dispel.png" width="32" style="vertical-align: middle; margin: 0;" alt="Dispel icon">
+                dispel one enemy buff.
             </p>
             <div class="flexbox center" style="width: 100%;">
                 <table class="dlnotes" style="width: 100%;">
@@ -491,14 +509,16 @@
                         <th>Damage Multiplier</th>
                         <th>Hits</th>
                         <th>SP Gain</th>
+                        <th>UTP Gain (% of gauge)</th>
                         <th>OD Multiplier</th>
                     </tr>
-                    <tr><th colspan="5"><hr></th></tr>
+                    <tr><th colspan="6"><hr></th></tr>
                     <tr>
                         <td>Combo 1</td>
                         <td>110%</td>
                         <td>1</td>
                         <td>150</td>
+                        <td>90 (3%)</td>
                         <td>x1</td>
                     </tr>
                     <tr>
@@ -506,6 +526,7 @@
                         <td>119%</td>
                         <td>1</td>
                         <td>150</td>
+                        <td>90 (3%)</td>
                         <td>x1</td>
                     </tr>
                     <tr>
@@ -513,6 +534,7 @@
                         <td>136%</td>
                         <td>1</td>
                         <td>196</td>
+                        <td>90 (3%)</td>
                         <td>x1</td>
                     </tr>
                     <tr>
@@ -520,6 +542,7 @@
                         <td>130%</td>
                         <td>1</td>
                         <td>265</td>
+                        <td>120 (4%)</td>
                         <td>x1</td>
                     </tr>
                     <tr>
@@ -527,6 +550,7 @@
                         <td>210%</td>
                         <td>1</td>
                         <td>391</td>
+                        <td>120 (4%)</td>
                         <td>x1</td>
                     </tr>
                 </table>
@@ -574,41 +598,15 @@
                 <li>Inflicts <img src="../assets/affliction/frostbite.png" width="18" style="vertical-align: middle; margin: 0;" alt="Frostbite icon"> Frostbite with <b>150%</b> chance and deals <span id="water">41%</span> water damage every
                     2.9 seconds for 21 seconds.</li>
             </ul>
-    
-            <p>Boundarywyrm's Shadow will attack together when Ren performs certain actions.</p>
-            <div class="flexbox center" style="width: 100%;">
-                <table class="dlnotes" style="width: 75%;">
-                    <tr>
-                        <th>Action</th>
-                        <th>Damage Multiplier</th>
-                        <th>Hits</th>
-                        <th>Range</th>
-                    </tr>
-                    <tr><th colspan="4"><hr></th></tr>
-                    <tr>
-                        <td>Combo 3</td>
-                        <td>252%</td>
-                        <td>1</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Combo 5</td>
-                        <td>252%</td>
-                        <td>1</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>Force Strike</td>
-                        <td>333%</td>
-                        <td>1</td>
-                        <td>5</td>
-                    </tr>
-                </table>
-            </div>
         </div>
+    
     </article>
 
     <footer></footer>
+
+    <div id="viewport">
+        <div id="dust-canvas"></div>
+    </div>
 </body>
 
 </html>

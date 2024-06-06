@@ -2,25 +2,40 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="../assets/favicon.png">
-    <title>Ren | wikyu | monoyoshi.github.io</title>
+    <link rel="icon" type="image/png" href="../global-assets/pictures/favicon.png">
+    <title>Ren | Project DROCSI | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <!-- global -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../global-assets/css/colors.css">
+    <link rel="stylesheet" href="../global-assets/css/fonts.css">
+
+    <link rel="stylesheet" href="../global-assets/css/style.css">
+
+    <!-- local -->
+    <link rel="stylesheet" href="../global-assets/css/dust.css">
+
+    <link rel="stylesheet" href="css/dragalia.css">
 
     <!-- scripts -->
+    <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="../javascript/main.js"></script>
-    <script src="../javascript/boilerplate.js"></script>
+    <script src="../global-assets/javascript/boilerplate.js"></script>
     <script>
+        // insert header and footer
         $(document).ready(function () {
-            $("header").html(header(1, "projects", "wikyu"));
-            $("footer").html(footer(1));
+            header(1, "projects");
+            footer(1);
         });
     </script>
+
+    <!-- local -->
+    <script src="../global-assets/javascript/dust.js"></script>
 </head>
 
 <body>
@@ -40,11 +55,11 @@
                             <img src="assets/weapon/sword.png" width="32" style="margin: 0 15px 0 0;" alt="Sword weapon icon">
                             <div class="h1">Ren</div>
                         </div>
-                        <div class="quote">"[insert splash quote here]"</div>
+                        <div class="quote">"...So what happens when the dragon wins? Well, you're looking right at 'em."</div>
                         <p>
-                            A dragon from another world whose body and soul were fused with a human's through a twisted
-                            experiment. Not wanting to let their host's "sacrifice" go in vain, this dragon-human fusion
-                            escaped and now roams the world hoping to make the most out of their new life.
+                            A strange and eccentric individual that blurs the line between dragon and human. Even though
+                            they strive to be a sword and shield for all, people always think of him as a dangerous
+                            monster.
                         </p>
                         <br>
                         <div class="h1">Profile</div>
@@ -53,26 +68,24 @@
                         <tr>
                             <th>Aliases</th>
                             <td>
-                                <a href="../about">Kyurem</a><br>
-                                Kyu<br>
+                                <a href="../profile.html">Kyu</a><br>
                                 Boundarywyrm<br>
                                 Bladewyrm<br>
-                                Big brother Ren-ren<br>
-                                Ren-senpai<br>
-                                Tf-1
-    
+                                Senpai<br>
+                                Af-01
                             </td>
                         </tr>
                         <tr><td><br></td></tr>
                         <tr>
                             <th>Species</th>
-                            <td>Dragon(?)</td>
+                            <td>"100% dragon, 100% human"</td>
                         </tr>
                         <tr>
                             <th>Pronouns</th>
                             <td>
                                 They/them<br>
-                                He/him
+                                He/him<br>
+                                It/its
                             </td>
                         </tr>
                         <tr>
@@ -82,8 +95,8 @@
                         <tr>
                             <th>Residence</th>
                             <td>
-                                "Somewhere in the otherworld"<br>
-                                The Halidom
+                                The Void<br>
+                                Starfrost Forest
                             </td>
                         </tr>
                         <tr><td><br></td></tr>
@@ -99,8 +112,9 @@
                             <th>Likes</th>
                             <td>
                                 Bladed weapons (swords)<br>
-                                The sky<br>
-                                Explosions
+                                The cold<br>
+                                Dawn<br>
+                                Animals
                             </td>
                         </tr>
                         <tr>
@@ -108,7 +122,7 @@
                             <td>
                                 Snow and ice<br>
                                 Loud noises<br>
-                                Eating fish<br>
+                                Cooked fish<br>
                                 Bugs
                             </td>
                         </tr>
@@ -117,18 +131,21 @@
                             <td>Bread</td>
                         </tr>
                         <tr>
+                            <th>Favorite color</th>
+                            <td>Magenta</td>
+                        </tr>
+                        <tr>
                             <th>Hobbies</th>
                             <td>
                                 People-watching<br>
-                                Piano<br>
-                                "Hacking" (taking care of <a href="hotarun">Hotarun</a>)
+                                Piano
                             </td>
                         </tr>
                         <tr>
                             <th>Special skills</th>
                             <td>
                                 Staring contests<br>
-                                Hyperfixation
+                                Defying reality
                             </td>
                         </tr>
                     </table>
@@ -139,78 +156,20 @@
         <br>
     
         <div class="flexbox center">
-            <a href="javascript:;" class="navbutton" id="active">General</a>
-            <a href="ren/gameplay" class="navbutton">Gameplay</a>
-            <a href="ren/quotes" class="navbutton">Quotes</a>
-            <a href="ren/stories" class="navbutton">Stories</a>
-            <a href="ren/gallery" class="navbutton">Gallery</a>
+            <a class="button" id="active">General</a>
+            <a href="ren/gameplay.html" class="button">Gameplay</a>
+            <a href="ren/quotes.html" class="button">Quotes</a>
+            <a class="button">Stories</a>
+            <a class="button">Gallery</a>
         </div>
-    
-        <br>
-    
-        <!-- this is work in progress so eh div class="flexbox">
-            <div class="textbox" style="width: 50%;">
-                <div class="h1">Scythe of the Syndicate</div>
-                <div class="frame">
-                    <img src="../assets/placeholder/drgl-5.png">
-                </div>
-                <p>
-                    Ren is a dragon originally known as the Boundarywyrm <b>Kyurem</b>. They were discovered within the
-                    space between worlds and were captured by the Syndicate.
-                </p>
-                <p>
-                    While in containment, the organization planned to use Kyurem for a set of experiments known as the
-                    Synthetic Shapeshifting Project. They wanted to give a human access to all of the Boundarywyrm's power
-                    in order to turn the dragon into their very own superweapon.
-                </p>
-                <p>
-                    The result is the dragon-human fusion that walks Grastaea today. Unwilling to follow the Syndicate's
-                    sinister plans, <b>Ren</b> broke out of containment. In the present day, they work alongside the Prince
-                    and the rest of the Halidom to preserve peace across the world.
-                </p>
-            </div>
-            <div class="textbox" style="width: 50%;">
-                <div class="h1">Dragon, human, or...?</div>
-                <div class="frame">
-                    <img src="../assets/placeholder/crock.png">
-                </div>
-                <p>
-                    Because of their strange origins, Ren is the subject to many rumors.
-                </p>
-                <p>
-                    Some believe that Kyurem is an otherworldly fiend whose violent arrival wiped out an entire village. It
-                    is said that this "human-eating monster" lurks the ruins at night and attacks those who dare approach
-                    it.
-                </p>
-                <p>
-                    Others believe that Ren is a human possessed by an evil spirit, similar to Morsayati and his
-                    reincarnations.
-                </p>
-            </div>
-        </div>
-    
-        <br>
-    
-        <div class="textbox">
-            <div class="h1">Relationships</div>
-            <div class="h2">Hotarun</div>
-            <p>His "dad."</p>
-        </div>
-    
-        <br>
 
-        <div class="textbox">
-            <div class="h1">Trivia</div>
-            <ul>
-                <li>
-                    The "village" in the rumor about Ren actually refers to the Syndicate facility that they were once
-                    imprisoned in. The Syndicate spread this rumor in an effort to demonize the Boundarywyrm.
-                </li>
-            </ul>
-        </div-->
     </article>
 
     <footer></footer>
+
+    <div id="viewport">
+        <div id="dust-canvas"></div>
+    </div>
 </body>
 
 </html>
