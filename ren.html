@@ -2,30 +2,30 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="../global-assets/pictures/favicon.png">
+    <link rel="icon" type="image/png" href="../global-assets/images/favicon.png">
     <title>Ren | Project DROCSI | monoyoshi.github.io</title>
 
     <!-- stylesheets -->
     <!-- global -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../global-assets/css/colors.css">
     <link rel="stylesheet" href="../global-assets/css/fonts.css">
 
     <link rel="stylesheet" href="../global-assets/css/style.css">
-
-    <!-- local -->
     <link rel="stylesheet" href="../global-assets/css/dust.css">
-
-    <link rel="stylesheet" href="css/dragalia.css">
+    <link rel="stylesheet" href="../global-assets/css/cursor.css">
 
     <!-- scripts -->
     <!-- global -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="../global-assets/javascript/boilerplate.js"></script>
+    <script src="../global-assets/javascript/dust.js"></script>
+    <script src="../global-assets/javascript/cursor.js"></script>
+
     <script>
         // insert header and footer
         $(document).ready(function () {
@@ -33,15 +33,25 @@
             footer(1);
         });
     </script>
-
-    <!-- local -->
-    <script src="../global-assets/javascript/dust.js"></script>
 </head>
 
 <body>
+    <div id="tap"></div>
+    <div id="drag"></div>
+
     <header></header>
 
     <article>
+        <div class="flexbox center">
+            <a class="button" id="active">General</a>
+            <a href="ren/gameplay.html" class="button">Gameplay</a>
+            <a href="ren/quotes.html" class="button">Quotes</a>
+            <a class="button">Stories</a>
+            <a class="button">Gallery</a>
+        </div>
+
+        <br>
+
         <div class="flexbox">
             <div class="frame" style="width: 40%; margin: 0;">
                 <img src="assets/ren/portrait.png" alt="Ren main art" style="margin: 0;">
@@ -152,17 +162,6 @@
                 </div>
             </div>
         </div>
-    
-        <br>
-    
-        <div class="flexbox center">
-            <a class="button" id="active">General</a>
-            <a href="ren/gameplay.html" class="button">Gameplay</a>
-            <a href="ren/quotes.html" class="button">Quotes</a>
-            <a class="button">Stories</a>
-            <a class="button">Gallery</a>
-        </div>
-
     </article>
 
     <footer></footer>
